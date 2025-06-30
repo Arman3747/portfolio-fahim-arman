@@ -1,12 +1,34 @@
-# React + Vite
+![App Screenshot](https://i.ibb.co/yn97fytF/logo-fahim-arman.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Portfolio (Fahim Arman)
 
-Currently, two official plugins are available:
+Front-End Developer (MERN Stack).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Link
 
-## Expanding the ESLint configuration
+- Please Visit my [Portfolio](https://fahim-arman.netlify.app/) !
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## key features
+
+- This is a portfolio website.
+- My resume is provided here.
+- A bit about myself is described.
+- Frameworks, libraries, and packages in which I am competent are described here.
+- My education history is mentioned.
+- My working projects are also mentioned.
+- My contact details are also mentioned at the end.
+
+
+## npm packages in Client Side
+
+- Use [Babel](https://babeljs.io/) for Fast Refresh
+- Uses [SWC](https://swc.rs/) for Fast Refresh
+- Uses [Tailwind](https://tailwindcss.com/) for building custom user interfaces
+- Uses [daisyUI](https://daisyui.com/) for building web pages quickly and easily
+- Uses [React Router](https://reactrouter.com/) for handling routing and navigation within React applications
+- Uses [React Fast Marquee](https://www.react-fast-marquee.com/) to create smooth, customizable, horizontally scrolling text or content in React.
+- Uses [react-simple-typewriter](https://react-simple-typewriter.vercel.app/?path=/story/introduction--page) for animates text with typewriter effect in React apps.
+- Uses [Netlify](https://www.netlify.com/) for deploys, hosts websites. 
+
+
+### Thank you for Reading!
