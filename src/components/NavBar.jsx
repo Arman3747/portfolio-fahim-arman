@@ -32,7 +32,7 @@ const NavBar = () => {
                 </div>
 
                 <div className='hidden lg:block'>
-                    <a className='bg-[#00df72] px-8 py-4 text-xl rounded-md' href="https://drive.google.com/file/d/1YJzaekf_z9NaWpF9-D72WcxyUpdIm-W4/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <a className='bg-[#00df72] px-8 py-4 text-xl rounded-md' href="https://drive.google.com/file/d/1FmA__Ei_5LrEheL8Hi9cWE750rsuBefh/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                         Resume
                     </a>
                 </div>
@@ -59,7 +59,7 @@ const NavBar = () => {
 
                         <NavLink className="text-xl cursor-pointer" to="/home#contacts"><span className={`hover:border-b-2 hover:border-[#00df72] ${location.hash === '#contacts' ? "border-b-2 border-[#00df72]" : " "}`}>./contact</span></NavLink>
 
-                        <a className='bg-[#00df72] px-4 py-1 text-xl rounded-md text-center' href="https://drive.google.com/file/d/1YJzaekf_z9NaWpF9-D72WcxyUpdIm-W4/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <a className='bg-[#00df72] px-4 py-1 text-xl rounded-md text-center' href="https://drive.google.com/file/d/1FmA__Ei_5LrEheL8Hi9cWE750rsuBefh/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                             Resume
                         </a>
                     </div>

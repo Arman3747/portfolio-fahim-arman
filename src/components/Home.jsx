@@ -21,6 +21,10 @@ const Home = () => {
     const location = useLocation();
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location]);
+
+    useEffect(() => {
         if (location.hash === '#hero' && homeRef.current) {
             homeRef.current.scrollIntoView({ behavior: 'smooth' });
         }

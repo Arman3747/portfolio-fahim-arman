@@ -9,11 +9,7 @@ import { Carousel } from 'react-responsive-carousel';
 import { PiLinkSimpleBold } from "react-icons/pi";
 import { FaGithub } from "react-icons/fa";
 
-// import { FaHtml5 } from "react-icons/fa";
-// import { FaCss3Alt } from "react-icons/fa";
-
-
-const ProjectBridge = () => {
+const ProjectBloodConnect = () => {
 
     const { pathname } = useLocation();
 
@@ -26,7 +22,7 @@ const ProjectBridge = () => {
     }, [pathname]);
 
     useEffect(() => {
-        fetch("BtoBridgeFeatures.json")
+        fetch("BloodConnectFeatures.json")
             .then((res) => res.json())
             .then((data) => setFeatures(data));
     }, []);
@@ -49,7 +45,7 @@ const ProjectBridge = () => {
                     <div className='hidden lg:flex justify-between items-center gap-8'>
                         <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/home">/home</NavLink>
 
-                        <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectBridge">./B2Bridge</NavLink>
+                        <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectBridge">./BloodConnect</NavLink>
                     </div>
 
                     <div>
@@ -65,7 +61,7 @@ const ProjectBridge = () => {
 
                             <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/home">/home</NavLink>
 
-                            <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectBridge">./B2Bridge</NavLink>
+                            <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectBridge">./BloodConnect</NavLink>
                         </div>
                     </div>
                 </div>
@@ -73,53 +69,71 @@ const ProjectBridge = () => {
 
 
             <div className='my-12'>
-                <h1 className='text-4xl lg:text-5xl font-bold mb-6'>B2Bridge</h1>
+                <h1 className='text-4xl lg:text-5xl font-bold mb-6'>BloodConnect</h1>
                 <p className='text-lg lg:text-2xl font-medium'>
-                    B2Bridge is a user-friendly web app where users can securely list, browse, and purchase products online, with features like Google login, product management, JWT protection, and responsive navigation.
+                    Blood Connect is a web platform that instantly connects blood donors and seekers through location-based search, verified profiles, and role-based dashboards, making blood donation faster, organized, and reliable for urgent needs.
                 </p>
             </div>
 
             <div className='bg-white border-2 rounded-md'>
                 <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
                     <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/yFQ0fj9Y/btob01.png" />
+                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/7dhbSrZt/Blood-Connect-github.png" />
                     </div>
                     <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/BHfxC82s/btob02.png" />
+                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/BHpsjCTq/Blood-Connect-post-02.png" />
                     </div>
                     <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/yJPW5bS/btob03.png" />
+                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/bMGmNjCK/Blood-Connect-post-03.png" />
                     </div>
                     <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/s9RjWSLm/btob04.png" />
+                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/JRLMzpWK/Blood-Connect-post-04.png" />
                     </div>
                     <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/ycq86M8j/btob05.png" />
+                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/hJGV8rnp/Blood-Connect-post-05.png" />
+                    </div>
+                    <div>
+                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/VWTyBTBw/Blood-Connect-post-06.png" />
+                    </div>
+                    <div>
+                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/6Rs9xYNb/Blood-Connect-post-07.png" />
+                    </div>
+                    <div>
+                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/JRfd2Z0S/Blood-Connect-post-08.png" />
+                    </div>
+                    <div>
+                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/WWB9WysS/Blood-Connect-post-09.png" />
+                    </div>
+                    <div>
+                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/bgP1rKLC/Blood-Connect-post-10.png" />
+                    </div>
+                    <div>
+                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/wZynrKFz/Blood-Connect-post-11.png" />
                     </div>
                 </Carousel>
             </div>
 
             <div className='my-12'>
-                <h3 className='text-2xl lg:text-3xl font-semibold mb-8'>Key Features of B2Bridge:</h3>
+                <h3 className='text-2xl lg:text-3xl font-semibold mb-8'>Key Features of BloodConnect:</h3>
 
 
                 {features.map((feature) => (
-                    <div key={feature.bridgeFeatureId} className='flex gap-2 mb-2'>
+                    <div key={feature.id} className='flex gap-2 mb-2'>
                         <div>
                             <span className="text-green-500 text-3xl font-medium">✓</span>
                         </div>
 
                         <div className='text-lg lg:text-xl font-medium'>
                             <span className='font-bold text-xl lg:text-2xl'>
-                                {feature.bridgeFeature}
-                            </span> -&nbsp; {feature.bridgeFeatureDescription}
+                                {feature.title}
+                            </span> -&nbsp; {feature.description}
                         </div>
                     </div>
                 ))}
             </div>
 
             <div>
-                <h3 className='text-2xl lg:text-3xl font-semibold my-12'>Main Technology Stack - B2Bridge</h3>
+                <h3 className='text-2xl lg:text-3xl font-semibold my-12'>Main Technology Stack - BloodConnect</h3>
 
                 <div className='grid grid-cols-2 lg:grid-cols-4 gap-4'>
 
@@ -193,21 +207,21 @@ const ProjectBridge = () => {
 
             <div className='grid grid-cols-3 gap-2 py-12'>
 
-                <a href="https://rad-daffodil-39264b.netlify.app/" target='_blank' rel="noopener noreferrer">
+                <a href="https://fascinating-sunflower-cfec7f.netlify.app/" target='_blank' rel="noopener noreferrer">
                     <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex justify-center items-center gap-2'>
                         <PiLinkSimpleBold />
                         Live Link
                     </button>
                 </a>
 
-                <a href="https://github.com/Arman3747/B2Bridge-client" target='_blank' rel="noopener noreferrer">
+                <a href="https://github.com/Arman3747/BloodConnect-Client" target='_blank' rel="noopener noreferrer">
                     <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex justify-center items-center gap-2'>
                         <FaGithub />
                         Github Client
                     </button>
                 </a>
 
-                <a href="https://github.com/Arman3747/B2Bridge-server" target='_blank' rel="noopener noreferrer">
+                <a href="https://github.com/Arman3747/BloodConnect-Server" target='_blank' rel="noopener noreferrer">
                     <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex items-center justify-center gap-2'>
                         <FaGithub />
                         Github Server
@@ -220,16 +234,16 @@ const ProjectBridge = () => {
 
                 <ul class="list-disc">
                     <li>
-                        <p className='text-lg text-justify'>B2Bridge will integrate secure payment gateways like Stripe, PayPal, or Razorpay for real-time transactions.</p>
+                        <p className='text-lg text-justify'>Implement real-time chat between roommates for easier communication.</p>
                     </li>
                     <li>
-                        <p className='text-lg text-justify'>A built-in chat system will allow direct communication between buyers and sellers.</p>
+                        <p className='text-lg text-justify'>Add advanced search filters based on lifestyle preferences, budget, and location.</p>
                     </li>
                     <li>
-                        <p className='text-lg text-justify'>A wishlist feature will let users save products for future reference.</p>
+                        <p className='text-lg text-justify'>Introduce a review and rating system for users and listings.</p>
                     </li>
                     <li>
-                        <p className='text-lg text-justify'>AI-powered recommendations will suggest relevant products to users based on their browsing and purchasing behavior.</p>
+                        <p className='text-lg text-justify'>Develop a mobile app version for Android and iOS.</p>
                     </li>
                 </ul>
             </div>
@@ -239,7 +253,7 @@ const ProjectBridge = () => {
                     <div className='flex justify-between items-center gap-8'>
                         <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/home">/home</NavLink>
 
-                        <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectBridge">./B2Bridge</NavLink>
+                        <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectBridge">./BloodConnect</NavLink>
                     </div>
                 </div>
             </div>
@@ -247,4 +261,4 @@ const ProjectBridge = () => {
     );
 };
 
-export default ProjectBridge;
+export default ProjectBloodConnect;

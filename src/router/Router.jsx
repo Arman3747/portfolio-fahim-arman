@@ -3,6 +3,8 @@ import React from 'react';
 import { createBrowserRouter } from "react-router";
 import Home from '../components/Home';
 import ProjectBridge from '../components/ProjectBridge';
+import ProjectRoomies from '../components/ProjectRoomies';
+import ProjectBloodConnect from '../components/ProjectBloodConnect';
 
 const Router = createBrowserRouter([
     {
@@ -16,7 +18,7 @@ const Router = createBrowserRouter([
                 element: <Home></Home>
             },
             {
-                path: "/projectRoomies",
+                path: "/projectRoomiesdfsd",
                 element: <div>Hello World</div>,
             }
         ]
@@ -24,6 +26,14 @@ const Router = createBrowserRouter([
     {
         path: "/projectBridge",
         element: <ProjectBridge></ProjectBridge>,
+    },
+    {
+        path: "/projectRoomies",
+        element: <ProjectRoomies></ProjectRoomies>
+    },
+    {
+        path: "/projectBloodConnect",
+        element: <ProjectBloodConnect></ProjectBloodConnect>
     },
 
 ]);
