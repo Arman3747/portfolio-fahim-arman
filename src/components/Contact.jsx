@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
+
 import { IoPersonSharp } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
@@ -13,10 +16,47 @@ import { FaGithubSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 
 
-
-
-
 const Contact = ({ ref }) => {
+
+    const form = useRef();
+
+    const YOUR_SERVICE_ID = import.meta.env.VITE_YOUR_SERVICE_ID;
+    const YOUR_TEMPLATE_ID = import.meta.env.VITE_YOUR_TEMPLATE_ID;
+    const YOUR_PUBLIC_KEY = import.meta.env.VITE_YOUR_PUBLIC_KEY;
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        // console.log(form.current);
+
+        emailjs
+            .sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form.current, {
+                publicKey: YOUR_PUBLIC_KEY,
+            })
+            .then(
+                () => {
+                    // console.log('SUCCESS!');
+                    Swal.fire({
+                        icon: "success",
+                        title: "Email Sent !",
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                    form.current.reset();
+                },
+                (error) => {
+                    // console.log('FAILED...', error.text);
+                    Swal.fire({
+                        icon: 'error',
+                        title: error,
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                },
+            );
+    };
+
+
+
     return (
         <div>
             <div className='my-12 px-2 lg:px-16'>
@@ -94,20 +134,27 @@ const Contact = ({ ref }) => {
 
                         <div className="card w-full">
                             <div className="card-body">
-                                <form className="fieldset">
+                                <form ref={form} onSubmit={sendEmail} className="fieldset">
+
+                                    <label className="label">Full Name</label>
+                                    <input type="text" className="input w-full bg-[#fbf7f4]" placeholder="Full Name" name="name" required />
+                                    <br />
 
                                     <label className="label">Email</label>
-                                    <input type="email" className="input w-full bg-[#fbf7f4]" placeholder="Email" />
+                                    <input type="email" className="input w-full bg-[#fbf7f4]" placeholder="Email" name="email" required />
+                                    <br />
+
+                                    <label className="label">Subject</label>
+                                    <input type="text" className="input w-full bg-[#fbf7f4]" placeholder="Subject" name="subject" required />
                                     <br />
 
                                     <label className="label">Message</label>
-                                    <textarea type="text" className="textarea h-36 w-full bg-[#fbf7f4]" placeholder="Message"></textarea>
+                                    <textarea type="text" className="textarea h-36 w-full bg-[#fbf7f4]" placeholder="Please write your message here ... " name="message" required ></textarea>
                                     <br />
 
-                                    <button className='bg-[#00df72] px-8 py-4 text-xl rounded-md'>
+                                    <button type="submit" className='bg-[#00df72] px-8 py-4 text-xl rounded-md' >
                                         Send Email
                                     </button>
-
                                 </form>
                             </div>
                         </div>

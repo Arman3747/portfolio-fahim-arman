@@ -19,21 +19,13 @@ const ProjectBridge = () => {
 
     const [openMenu, setOpenMenu] = useState(false);
 
-    const [features, setFeatures] = useState([]);
-
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [pathname]);
 
-    useEffect(() => {
-        fetch("BtoBridgeFeatures.json")
-            .then((res) => res.json())
-            .then((data) => setFeatures(data));
-    }, []);
-
     return (
         <div className='max-w-[1600px] mx-auto px-4'>
-
+            {/* navBar */}
             <div className="sticky top-0 z-1000 bg-[#fbf7f4] py-4 border-b border-gray-300">
                 <div className='flex justify-between items-center gap-4 px lg:px-16'>
                     <div className='flex items-center justify-center gap-2'>
@@ -71,15 +63,109 @@ const ProjectBridge = () => {
                 </div>
             </div>
 
-
+            {/* description  */}
             <div className='my-12'>
-                <h1 className='text-4xl lg:text-5xl font-bold mb-6'>B2Bridge</h1>
+                <h1 className='text-4xl lg:text-5xl font-bold mb-6'>
+                    <span className='border-b-2 border-[#00df72]'>
+                        B2Bridge
+                    </span>
+                </h1>
                 <p className='text-lg lg:text-2xl font-medium'>
                     B2Bridge is a user-friendly web app where users can securely list, browse, and purchase products online, with features like Google login, product management, JWT protection, and responsive navigation.
                 </p>
             </div>
 
-            <div className='bg-white border-2 rounded-md'>
+            <div className='flex flex-col lg:flex-row  justify-between items-center gap-8 mb-12'>
+                <div className='flex-1 bg-white border-2 rounded-md'>
+                    <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
+                        <div>
+                            <img className='h-60 lg:h-120 w-auto object-contain' src="https://i.ibb.co/yFQ0fj9Y/btob01.png" />
+                        </div>
+                        <div>
+                            <img className='h-60 lg:h-120 w-auto object-contain' src="https://i.ibb.co/BHfxC82s/btob02.png" />
+                        </div>
+                        <div>
+                            <img className='h-60 lg:h-120 w-auto object-contain' src="https://i.ibb.co/yJPW5bS/btob03.png" />
+                        </div>
+                        <div>
+                            <img className='h-60 lg:h-120 w-auto object-contain' src="https://i.ibb.co/s9RjWSLm/btob04.png" />
+                        </div>
+                        <div>
+                            <img className='h-60 lg:h-120 w-auto object-contain' src="https://i.ibb.co/ycq86M8j/btob05.png" />
+                        </div>
+                    </Carousel>
+                </div>
+
+                <div className='flex-1'>
+                    <h1 className='text-3xl font-semibold mb-8'>
+                        <span className='border-b-2 border-[#00df72]'>
+                            Key Features of B2Bridge:
+                        </span>
+                    </h1>
+                    {/* <p className='text-xl text-justify'>A web app where businesses (users) can post their products for sale, browse by category, and make purchases — essentially bridging the gap between sellers and buyers in the business world.</p> */}
+
+                    <div className='flex gap-2 mb-2'>
+                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
+                        <div className='text-xl font-medium'>Easily filter products by category, brand, rating, price, and more to quickly find exactly what you're looking for.</div>
+                    </div>
+                    <div className='flex gap-2 mb-2'>
+                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
+                        <div className='text-xl font-medium'>See full product specifications and open a modal to place orders with quantity selection and minimum validation.</div>
+                    </div>
+
+                    <div className='flex gap-2 mb-2'>
+                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
+                        <div className='text-xl font-medium'>Product quantities are instantly updated in MongoDB using $inc during orders or when products are removed from cart.</div>
+                    </div>
+
+                    <div className='flex gap-2 mb-2'>
+                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
+                        <div className='text-xl font-medium'>Authenticated users can add detailed product listings including image, price, brand, category, and quantity.</div>
+                    </div>
+
+                    <div className='flex gap-2 mb-2'>
+                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
+                        <div className='text-xl font-medium'>
+                            Items removed from the cart will restore stock to the product in the database using secure MongoDB updates.
+                        </div>
+                    </div>
+
+                    <div className='flex gap-2 mb-2'>
+                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
+                        <div className='text-xl font-medium'>
+                            Users can toggle between a grid-based card view and a table view to browse all listed products more efficiently.
+                        </div>
+                    </div>
+
+                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 py-4'>
+
+                        <a href="https://rad-daffodil-39264b.netlify.app/" target='_blank' rel="noopener noreferrer">
+                            <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex justify-center items-center gap-2'>
+                                <PiLinkSimpleBold />
+                                Live Link
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/Arman3747/B2Bridge-client" target='_blank' rel="noopener noreferrer">
+                            <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex justify-center items-center gap-2'>
+                                <FaGithub />
+                                Github Client
+                            </button>
+                        </a>
+
+                        {/* <a href="https://github.com/Arman3747/B2Bridge-server" target='_blank' rel="noopener noreferrer">
+                    <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex items-center justify-center gap-2'>
+                        <FaGithub />
+                        Github Server
+                    </button>
+                </a> */}
+                    </div>
+
+
+                </div>
+            </div>
+
+            {/* <div className='bg-white border-2 rounded-md'>
                 <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
                     <div>
                         <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/yFQ0fj9Y/btob01.png" />
@@ -116,10 +202,14 @@ const ProjectBridge = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div> */}
 
             <div>
-                <h3 className='text-2xl lg:text-3xl font-semibold my-12'>Main Technology Stack - B2Bridge</h3>
+                <h3 className='text-2xl lg:text-3xl font-semibold my-12'>
+                    <span className='border-b-2 border-[#00df72]'>
+                        Main Technology Stack - B2Bridge
+                    </span>
+                </h3>
 
                 <div className='grid grid-cols-2 lg:grid-cols-4 gap-4'>
 
@@ -191,47 +281,28 @@ const ProjectBridge = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-2 py-12'>
+            <div className="my-12 mx-4">
+                <h1 className='text-3xl font-medium my-12'>
+                    <span className='border-b-2 border-[#00df72]'>
+                        Challenges & Solutions
+                    </span>
+                </h1>
 
-                <a href="https://rad-daffodil-39264b.netlify.app/" target='_blank' rel="noopener noreferrer">
-                    <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex justify-center items-center gap-2'>
-                        <PiLinkSimpleBold />
-                        Live Link
-                    </button>
-                </a>
-
-                <a href="https://github.com/Arman3747/B2Bridge-client" target='_blank' rel="noopener noreferrer">
-                    <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex justify-center items-center gap-2'>
-                        <FaGithub />
-                        Github Client
-                    </button>
-                </a>
-
-                <a href="https://github.com/Arman3747/B2Bridge-server" target='_blank' rel="noopener noreferrer">
-                    <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex items-center justify-center gap-2'>
-                        <FaGithub />
-                        Github Server
-                    </button>
-                </a>
+                <p className="text-lg">
+                    In the B2Bridge project, I faced challenges with real-time inventory updates, secure authentication, and UI responsiveness. I solved them using MongoDB $inc operations, JWT protection, and Tailwind CSS with DaisyUI for adaptive design.
+                </p>
             </div>
 
             <div className="my-12 mx-4">
-                <h1 className='text-3xl font-medium my-12'>Future Plans</h1>
+                <h1 className='text-3xl font-medium my-12'>
+                    <span className='border-b-2 border-[#00df72]'>
+                        Future Plans
+                    </span>
+                </h1>
 
-                <ul class="list-disc">
-                    <li>
-                        <p className='text-lg text-justify'>B2Bridge will integrate secure payment gateways like Stripe, PayPal, or Razorpay for real-time transactions.</p>
-                    </li>
-                    <li>
-                        <p className='text-lg text-justify'>A built-in chat system will allow direct communication between buyers and sellers.</p>
-                    </li>
-                    <li>
-                        <p className='text-lg text-justify'>A wishlist feature will let users save products for future reference.</p>
-                    </li>
-                    <li>
-                        <p className='text-lg text-justify'>AI-powered recommendations will suggest relevant products to users based on their browsing and purchasing behavior.</p>
-                    </li>
-                </ul>
+                <p className="text-lg">
+                    B2Bridge will add secure payment gateways, a built-in buyer-seller chat, a wishlist for saved products, and AI-powered recommendations to enhance transactions, communication, personalization, and user experience across the platform.
+                </p>
             </div>
 
             <div className=" bg-[#333333] text-[#fbf7f4] py-4">

@@ -15,21 +15,13 @@ const ProjectRoomies = () => {
 
     const [openMenu, setOpenMenu] = useState(false);
 
-    const [features, setFeatures] = useState([]);
-
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [pathname]);
 
-    useEffect(() => {
-        fetch("RoomiesFeatures.json")
-            .then((res) => res.json())
-            .then((data) => setFeatures(data));
-    }, []);
-
     return (
         <div className='max-w-[1600px] mx-auto px-4'>
-
+            {/* navbar  */}
             <div className="sticky top-0 z-1000 bg-[#fbf7f4] py-4 border-b border-gray-300">
                 <div className='flex justify-between items-center gap-4 px lg:px-16'>
                     <div className='flex items-center justify-center gap-2'>
@@ -66,16 +58,109 @@ const ProjectRoomies = () => {
                     </div>
                 </div>
             </div>
-
-
+            {/* header  */}
             <div className='my-12'>
-                <h1 className='text-4xl lg:text-5xl font-bold mb-6'>Roomies</h1>
-                <p className='text-lg lg:text-2xl font-medium'>
+                <h1 className='text-4xl lg:text-5xl font-bold mb-6'>
+                    <span className='border-b-2 border-[#00df72]'>
+                        Roomies
+                    </span>
+                </h1>
+                <p className='text-lg lg:text-2xl font-medium text-justify'>
                     Roomies is a web app for finding roommates or rooms to rent, offering secure authentication, detailed listings, like-to-contact features, and a personal dashboard with posts, likes, and rent analytics.
                 </p>
             </div>
 
-            <div className='bg-white border-2 rounded-md'>
+            <div className='flex flex-col lg:flex-row  justify-between items-center gap-8'>
+
+                <div className='flex-1 bg-white border-2 rounded-md'>
+                    <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
+                        <div>
+                            <img className='h-60 lg:h-120 w-auto object-contain' src="https://i.ibb.co/Q3ymNpkh/Roomies-github.png" />
+                        </div>
+                        <div>
+                            <img className='h-60 lg:h-120 w-auto object-contain' src="https://i.ibb.co/pjKWfvJq/Roomies-post-02.png" />
+                        </div>
+                        <div>
+                            <img className='h-60 lg:h-120 w-auto object-contain' src="https://i.ibb.co/Rk7p7LPj/Roomies-post-03.png" />
+                        </div>
+                        <div>
+                            <img className='h-60 lg:h-120 w-auto object-contain' src="https://i.ibb.co/bMyXQHzJ/Roomies-post-04.png" />
+                        </div>
+                        <div>
+                            <img className='h-60 lg:h-120 w-auto object-contain' src="https://i.ibb.co/V06yJgMc/Roomies-post-05.png" />
+                        </div>
+                    </Carousel>
+                </div>
+
+                <div className='flex-1'>
+                    <h1 className='text-3xl font-semibold mb-8'>
+                        <span className='border-b-2 border-[#00df72]'>
+                            Key Features of Roomies
+                        </span>
+                    </h1>
+
+                    <div className='flex gap-2 mb-2'>
+                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
+                        <div className='text-xl font-medium'>Roomies helps you find and post rooms for rent with ease.</div>
+                    </div>
+
+                    <div className='flex gap-2 mb-2'>
+                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
+                        <div className='text-xl font-medium'>Like a listing to reveal the owner's contact details.</div>
+                    </div>
+
+                    <div className='flex gap-2 mb-2'>
+                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
+                        <div className='text-xl font-medium'>View your posts, likes, and stats in your personal dashboard.</div>
+                    </div>
+
+                    <div className='flex gap-2 mb-2'>
+                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
+                        <div className='text-xl font-medium'>
+                            Users can view, update, and delete only their own roommate posts.
+                        </div>
+                    </div>
+
+                    <div className='flex gap-2 mb-2'>
+                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
+                        <div className='text-xl font-medium'>
+                            Public listing page shows all roommate posts with search and 'See More' options.
+                        </div>
+                    </div>
+
+                    <div className='flex gap-2 mb-2'>
+                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
+                        <div className='text-xl font-medium'>
+                            Switch between light and dark modes for better accessibility and comfort.
+                        </div>
+                    </div>
+
+                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 py-4'>
+                        <a href="https://bloodconnect-3e8aa.web.app/" target='_blank' rel="noopener noreferrer">
+                            <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex justify-center items-center gap-2'>
+                                <PiLinkSimpleBold />
+                                Live Link
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/Arman3747/roomies-client" target='_blank' rel="noopener noreferrer">
+                            <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex justify-center items-center gap-2'>
+                                <FaGithub />
+                                Github Client
+                            </button>
+                        </a>
+
+                        {/* <a href="https://github.com/Arman3747/roomies-server" target='_blank' rel="noopener noreferrer">
+                    <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex items-center justify-center gap-2'>
+                        <FaGithub />
+                        Github Server
+                    </button>
+                </a> */}
+                    </div>
+                </div>
+            </div>
+
+            {/* <div className='bg-white border-2 rounded-md'>
                 <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
                     <div>
                         <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/Q3ymNpkh/Roomies-github.png" />
@@ -93,10 +178,10 @@ const ProjectRoomies = () => {
                         <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/V06yJgMc/Roomies-post-05.png" />
                     </div>
                 </Carousel>
-            </div>
+            </div> */}
 
-            <div className='my-12'>
-                <h3 className='text-2xl lg:text-3xl font-semibold mb-8'>Key Features of Roomies:</h3>
+            {/* <div className='my-12'>
+                <h3 className='text-2xl lg:text-3xl font-semibold mb-8'>Key Features of Roomies</h3>
 
 
                 {features.map((feature) => (
@@ -112,10 +197,16 @@ const ProjectRoomies = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div> */}
+
+
 
             <div>
-                <h3 className='text-2xl lg:text-3xl font-semibold my-12'>Main Technology Stack - Roomies</h3>
+                <h3 className='text-2xl lg:text-3xl font-semibold my-12'>
+                    <span className='border-b-2 border-[#00df72]'>
+                        Main Technology Stack - Roomies
+                    </span>
+                </h3>
 
                 <div className='grid grid-cols-2 lg:grid-cols-4 gap-4'>
 
@@ -186,47 +277,28 @@ const ProjectRoomies = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-2 py-12'>
+            <div className="my-12 mx-4">
+                <h1 className='text-3xl font-medium my-12'>
+                    <span className='border-b-2 border-[#00df72]'>
+                        Challenges & Solutions
+                    </span>
+                </h1>
 
-                <a href="https://bloodconnect-3e8aa.web.app/" target='_blank' rel="noopener noreferrer">
-                    <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex justify-center items-center gap-2'>
-                        <PiLinkSimpleBold />
-                        Live Link
-                    </button>
-                </a>
-
-                <a href="https://github.com/Arman3747/roomies-client" target='_blank' rel="noopener noreferrer">
-                    <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex justify-center items-center gap-2'>
-                        <FaGithub />
-                        Github Client
-                    </button>
-                </a>
-
-                <a href="https://github.com/Arman3747/roomies-server" target='_blank' rel="noopener noreferrer">
-                    <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex items-center justify-center gap-2'>
-                        <FaGithub />
-                        Github Server
-                    </button>
-                </a>
+                <p className="text-lg text-justify">
+                    Faced challenges with secure authentication, protected routes, conditional data display, responsiveness, and user feedback. Solved using Firebase, server-side filtering, like-based reveals, Tailwind CSS, DaisyUI, toast notifications, SweetAlert, and loading spinners for seamless experience.
+                </p>
             </div>
 
             <div className="my-12 mx-4">
-                <h1 className='text-3xl font-medium my-12'>Future Plans</h1>
+                <h1 className='text-3xl font-medium my-12'>
+                    <span className='border-b-2 border-[#00df72]'>
+                        Future Plans
+                    </span>
+                </h1>
 
-                <ul class="list-disc">
-                    <li> 
-                        <p className='text-lg text-justify'>Implement real-time chat between roommates for easier communication.</p>
-                    </li>
-                    <li>
-                        <p className='text-lg text-justify'>Add advanced search filters based on lifestyle preferences, budget, and location.</p>
-                    </li>
-                    <li>
-                        <p className='text-lg text-justify'>Introduce a review and rating system for users and listings.</p>
-                    </li>
-                    <li>
-                        <p className='text-lg text-justify'>Develop a mobile app version for Android and iOS.</p>
-                    </li>
-                </ul>
+                <p className="text-lg text-justify">
+                    Roomies plans to add real-time roommate chat, advanced lifestyle-based search filters, a user and listing review system, and launch mobile apps for Android and iOS to enhance convenience and engagement.
+                </p>
             </div>
 
             <div className=" bg-[#333333] text-[#fbf7f4] py-4">
