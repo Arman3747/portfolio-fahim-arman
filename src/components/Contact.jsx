@@ -41,12 +41,12 @@ const Contact = ({ ref }) => {
 
                                 <div className='flex justify-start items-center gap-2'>
                                     <IoCall className='text-3xl text-[#00df72]' />
-                                    <h3 className='text-xl'>+61469359791</h3>
+                                    <h3 className='text-xl'>+61 469 359 791</h3>
                                 </div>
 
                                 <div className='flex justify-start items-center gap-2'>
                                     <FaSquareWhatsapp className='text-3xl text-[#00df72]' />
-                                    <h3 className='text-xl'>+61469359791</h3>
+                                    <h3 className='text-xl'>+61 469 359 791</h3>
                                 </div>
 
                                 <div className='flex justify-start items-center gap-2'>

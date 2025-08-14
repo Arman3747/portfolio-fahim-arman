@@ -62,15 +62,14 @@ const ProjectThree = () => {
                 </div>
 
                 <div className='flex-1'>
-                    <h1 className='text-3xl font-semibold mb-2'>
+                    <h1 className='text-3xl font-semibold mb-8'>
                         <span className='border-b-2 border-[#00df72]'>
                             BloodConnect
                         </span>
                     </h1>
                     <p className='text-xl text-justify'>Blood Connect is a web platform that instantly connects blood donors and seekers through location-based search, verified profiles, and role-based dashboards, making blood donation faster, organized, and reliable for urgent needs.</p>
-                    <br />
 
-                    <div className='flex gap-2 mb-2'>
+                    {/* <div className='flex gap-2 mb-2'>
                         <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
                         <div className='text-xl font-medium'>Quickly find blood donors by blood group and location.</div>
                     </div>
@@ -83,13 +82,12 @@ const ProjectThree = () => {
                     <div className='flex gap-2 mb-2'>
                         <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
                         <div className='text-xl font-medium'>Create, track, and update blood donation requests securely.</div>
-                    </div>
-                    <br />
+                    </div> */}
 
-                    <div className='grid grid-cols-8 place-items-center gap-2 mb-4'>
+                    <div className='grid grid-cols-8 place-items-center gap-2 my-8'>
 
-                        <FaReact className='text-5xl text-[#61DAFB] border-2 border-[#333333] p-2 rounded-md' />
                         <AiOutlineJavaScript className='text-5xl text-[#FFED29] border-2 bg-[#333333] border-[#333333] p-2 rounded-md' />
+                        <FaReact className='text-5xl text-[#61DAFB] border-2 border-[#333333] p-2 rounded-md' />
                         <FaNodeJs className='text-5xl text-[#5FA04E] border-2 border-[#333333] p-2 rounded-md' />
                         <SiExpress className='text-5xl text-[#000000] border-2 border-[#333333] p-2 rounded-md' />
 
@@ -101,7 +99,7 @@ const ProjectThree = () => {
 
                     <div className='grid grid-cols-2 gap-2'>
 
-                        <a href="https://fascinating-sunflower-cfec7f.netlify.app/" target='_blank' rel="noopener noreferrer">
+                        <a href="https://bloodconnect-3e8aa.web.app/" target='_blank' rel="noopener noreferrer">
                             <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex justify-center items-center gap-2'>
                                 <PiLinkSimpleBold />
                                 Live Link

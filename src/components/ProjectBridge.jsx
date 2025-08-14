@@ -191,7 +191,7 @@ const ProjectBridge = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-3 gap-2 py-12'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-2 py-12'>
 
                 <a href="https://rad-daffodil-39264b.netlify.app/" target='_blank' rel="noopener noreferrer">
                     <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex justify-center items-center gap-2'>
@@ -215,7 +215,7 @@ const ProjectBridge = () => {
                 </a>
             </div>
 
-            <div className="my-12">
+            <div className="my-12 mx-4">
                 <h1 className='text-3xl font-medium my-12'>Future Plans</h1>
 
                 <ul class="list-disc">

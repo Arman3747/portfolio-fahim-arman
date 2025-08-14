@@ -143,19 +143,6 @@ const ProjectBloodConnect = () => {
 
                     <div className='col-span-1 lg:col-span-3 flex flex-wrap justify-start items-center gap-4'>
 
-                        {/* <div className="border-2 p-1 flex justify-center items-center gap-2 bg-[#333333] rounded-md">
-                            <FaHtml5 className='text-xl text-[#E34F26]' />
-                            <p className="text-white">HTML5</p>
-                        </div>
-
-                        <div className="border-2 p-1 flex justify-center items-center gap-2 bg-[#333333] rounded-md">
-                            <FaCss3Alt className='text-xl text-[#663399]' />
-                            <p className="text-white">CSS3</p>
-                        </div> */}
-
-
-
-
                         <img src="https://img.shields.io/badge/HTML5-333333?logo=html5" alt="" />
                         <img src="https://img.shields.io/badge/CSS3-333333?logo=css" alt="" />
                         <img src="https://img.shields.io/badge/JavaScript-333333?logo=javascript" alt="" />
@@ -165,6 +152,7 @@ const ProjectBloodConnect = () => {
                         <img src="https://img.shields.io/badge/React_Router-333333?logo=reactrouter" alt="" />
                         <img src="https://img.shields.io/badge/Swiper-333333?logo=swiper" alt="" />
                         <img src="https://img.shields.io/badge/Axios-333333?logo=axios" alt="" />
+
                     </div>
 
                     <div className='text-right text-lg lg:text-2xl col-span-1'>Backend</div>
@@ -205,7 +193,7 @@ const ProjectBloodConnect = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-3 gap-2 py-12'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-2 py-12'>
 
                 <a href="https://fascinating-sunflower-cfec7f.netlify.app/" target='_blank' rel="noopener noreferrer">
                     <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex justify-center items-center gap-2'>
@@ -229,7 +217,7 @@ const ProjectBloodConnect = () => {
                 </a>
             </div>
 
-            <div className="my-12">
+            <div className="my-12 mx-4">
                 <h1 className='text-3xl font-medium my-12'>Future Plans</h1>
 
                 <ul class="list-disc">

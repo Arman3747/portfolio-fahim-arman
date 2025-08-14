@@ -42,15 +42,14 @@ const ProjectsOne = () => {
                 </div>
 
                 <div className='flex-1'>
-                    <h1 className='text-3xl font-semibold mb-2'>
+                    <h1 className='text-3xl font-semibold mb-8'>
                         <span className='border-b-2 border-[#00df72]'>
                             B2Bridge
                         </span>
                     </h1>
                     <p className='text-xl text-justify'>A web app where businesses (users) can post their products for sale, browse by category, and make purchases — essentially bridging the gap between sellers and buyers in the business world.</p>
-                    <br />
 
-                    <div className='flex gap-2 mb-2'>
+                    {/* <div className='flex gap-2 mb-2'>
                         <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
                         <div className='text-xl font-medium'>Seamless Product Posting and Management</div>
                     </div>
@@ -63,13 +62,12 @@ const ProjectsOne = () => {
                     <div className='flex gap-2 mb-2'>
                         <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
                         <div className='text-xl font-medium'>Secure Authentication with Google and JWT</div>
-                    </div>
-                    <br />
+                    </div> */}
 
-                    <div className='grid grid-cols-8 place-items-center gap-2 mb-4'>
+                    <div className='grid grid-cols-8 place-items-center gap-2 my-8'>
 
-                        <FaReact className='text-5xl text-[#61DAFB] border-2 border-[#333333] p-2 rounded-md' />
                         <AiOutlineJavaScript className='text-5xl text-[#FFED29] border-2 bg-[#333333] border-[#333333] p-2 rounded-md' />
+                        <FaReact className='text-5xl text-[#61DAFB] border-2 border-[#333333] p-2 rounded-md' />
                         <FaNodeJs className='text-5xl text-[#5FA04E] border-2 border-[#333333] p-2 rounded-md' />
                         <SiExpress className='text-5xl text-[#000000] border-2 border-[#333333] p-2 rounded-md' />
 

@@ -44,15 +44,14 @@ const ProjectsTwo = () => {
                 </div>
 
                 <div className='flex-1'>
-                    <h1 className='text-3xl font-semibold mb-2'>
+                    <h1 className='text-3xl font-semibold mb-8'>
                         <span className='border-b-2 border-[#00df72]'>
                             Roomies
                         </span>
                     </h1>
                     <p className='text-xl text-justify'>Roomies is a web app for finding roommates or rooms to rent, offering secure authentication, detailed listings, like-to-contact features, and a personal dashboard with posts, likes, and rent analytics.</p>
-                    <br />
 
-                    <div className='flex gap-2 mb-2'>
+                    {/* <div className='flex gap-2 mb-2'>
                         <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
                         <div className='text-xl font-medium'>Roomies helps you find and post rooms for rent with ease.</div>
                     </div>
@@ -65,13 +64,12 @@ const ProjectsTwo = () => {
                     <div className='flex gap-2 mb-2'>
                         <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
                         <div className='text-xl font-medium'>View your posts, likes, and stats in your personal dashboard.</div>
-                    </div>
-                    <br />
+                    </div> */}
 
-                    <div className='grid grid-cols-8 place-items-center gap-2 mb-4'>
+                    <div className='grid grid-cols-8 place-items-center gap-2 my-8'>
 
-                        <FaReact className='text-5xl text-[#61DAFB] border-2 border-[#333333] p-2 rounded-md' />
                         <AiOutlineJavaScript className='text-5xl text-[#FFED29] border-2 bg-[#333333] border-[#333333] p-2 rounded-md' />
+                        <FaReact className='text-5xl text-[#61DAFB] border-2 border-[#333333] p-2 rounded-md' />
                         <FaNodeJs className='text-5xl text-[#5FA04E] border-2 border-[#333333] p-2 rounded-md' />
                         <SiExpress className='text-5xl text-[#000000] border-2 border-[#333333] p-2 rounded-md' />
 
