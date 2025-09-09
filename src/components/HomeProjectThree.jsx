@@ -17,9 +17,12 @@ const HomeProjectThree = () => {
     return (
         <div className='my-2'>
             <div className='flex flex-col lg:flex-row  justify-between items-center gap-4 m-2 p-2 border-2 border-[#33333330] rounded-md h-full'>
-                <div className='flex-1 bg-white border-2 border-gray-100 rounded-md shadow-2xl'>
-                    <img src="https://i.ibb.co/DPm1QV6v/Blood-Connect-home-project.png" alt="" className='w-[320px] rounded-md' />
+                <div className='flex-1'>
+                    <div className='flex justify-center items-center bg-white border-2 border-gray-100 rounded-md shadow-2xl p-4'>
+                        <img src="https://i.ibb.co/gbFcVdHZ/Blood-Connect-Full-Page-Uses-new.png" alt="" className='w-[320px] rounded-md' />
+                    </div>
                 </div>
+
                 <div className='flex-1'>
                     <h1 className='text-3xl font-semibold mb-8'>
                         <span className='border-b-2 border-[#00df72]'>

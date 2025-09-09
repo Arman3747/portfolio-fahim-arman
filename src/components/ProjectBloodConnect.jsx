@@ -36,6 +36,8 @@ const ProjectBloodConnect = () => {
                     <div className='hidden lg:flex justify-between items-center gap-8'>
                         <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/home">/home</NavLink>
 
+                        <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/allProjects">/allProjects</NavLink>
+
                         <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectBridge">./BloodConnect</NavLink>
                     </div>
 
@@ -48,11 +50,13 @@ const ProjectBloodConnect = () => {
                             openMenu ? <RiCloseLargeFill className='text-3xl lg:hidden' /> : <HiMenu className='text-3xl lg:hidden' />
                         }
 
-                        <div className={`lg:hidden absolute flex flex-col justify-end duration-500 gap-2 bg-[#fbf7f4] rounded-md p-2 border border-gray-300 ${openMenu ? 'top-14 right-0' : '-top-25 right-0'}`}>
+                        <div className={`lg:hidden absolute flex flex-col justify-end duration-500 gap-2 bg-[#fbf7f4] rounded-md p-2 border border-gray-300 ${openMenu ? 'top-14 right-0' : '-top-35 right-0'}`}>
 
                             <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/home">/home</NavLink>
 
-                            <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectBridge">./BloodConnect</NavLink>
+                            <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/allProjects">/allProjects</NavLink>
+                            
+                            <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectBloodConnect">./BloodConnect</NavLink>
                         </div>
                     </div>
                 </div>
@@ -152,7 +156,6 @@ const ProjectBloodConnect = () => {
                         </div>
                     </div>
 
-
                     <div className='flex gap-2 mb-2'>
                         <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
                         <div className='text-xl font-medium'>
@@ -176,7 +179,7 @@ const ProjectBloodConnect = () => {
 
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 py-4'>
 
-                        <a href="https://fascinating-sunflower-cfec7f.netlify.app/" target='_blank' rel="noopener noreferrer">
+                        <a className="col-span-1 lg:col-span-2" href="https://bloodconnect-3e8aa.web.app/" target='_blank' rel="noopener noreferrer">
                             <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex justify-center items-center gap-2'>
                                 <PiLinkSimpleBold />
                                 Live Link
@@ -190,12 +193,12 @@ const ProjectBloodConnect = () => {
                             </button>
                         </a>
 
-                        {/* <a href="https://github.com/Arman3747/BloodConnect-Server" target='_blank' rel="noopener noreferrer">
+                        <a href="https://github.com/Arman3747/BloodConnect-Server" target='_blank' rel="noopener noreferrer">
                             <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex items-center justify-center gap-2'>
                                 <FaGithub />
                                 Github Server
                             </button>
-                        </a> */}
+                        </a>
                     </div>
                 </div>
             </div>
@@ -260,8 +263,11 @@ const ProjectBloodConnect = () => {
                         <img src="https://img.shields.io/badge/Tailwind_CSS-333333?logo=tailwindcss" alt="" />
                         <img src="https://img.shields.io/badge/Daisy_UI-333333?logo=daisyui" alt="" />
                         <img src="https://img.shields.io/badge/React_Router-333333?logo=reactrouter" alt="" />
-                        <img src="https://img.shields.io/badge/Swiper-333333?logo=swiper" alt="" />
                         <img src="https://img.shields.io/badge/Axios-333333?logo=axios" alt="" />
+                        <img src="https://img.shields.io/badge/React_Hook_Form-333333?logo=reacthookform" alt="" />
+                        <img src="https://img.shields.io/badge/TanStack_Query-333333?logo=reactquery
+" alt="" />
+                        
 
                     </div>
 
@@ -271,6 +277,7 @@ const ProjectBloodConnect = () => {
                         <img src="https://img.shields.io/badge/Express.js-333333?logo=express" alt="" />
                         <img src="https://img.shields.io/badge/MongoDB-333333?logo=mongodb" alt="" />
                         <img src="https://img.shields.io/badge/Nodemon-333333?logo=nodemon" alt="" />
+                        <img src="https://img.shields.io/badge/Stripe-333333?logo=stripe" alt="" />
 
                     </div>
 
@@ -298,7 +305,7 @@ const ProjectBloodConnect = () => {
                     <div className='text-right text-lg lg:text-2xl col-span-1'>Web Hosting <span className='hidden lg:inline-block'>& Deployment</span></div>
                     <div className='col-span-1 lg:col-span-3 flex flex-wrap justify-start items-center gap-4'>
                         <img src="https://img.shields.io/badge/Vercel-333333?logo=vercel" alt="" />
-                        <img src="https://img.shields.io/badge/Netlify-333333?logo=netlify" alt="" />
+                        <img src="https://img.shields.io/badge/Firebase-333333?logo=firebase" alt="" />
                     </div>
                 </div>
             </div>
@@ -331,6 +338,8 @@ const ProjectBloodConnect = () => {
                 <div className='flex justify-center items-center gap-4 px-16'>
                     <div className='flex justify-between items-center gap-8'>
                         <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/home">/home</NavLink>
+
+                        <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/allProjects">/allProjects</NavLink>
 
                         <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectBridge">./BloodConnect</NavLink>
                     </div>

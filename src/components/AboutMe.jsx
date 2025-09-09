@@ -6,7 +6,7 @@ const AboutMe = ({ ref }) => {
             
             <h1 ref={ref} id="about" className='scroll-mt-32 text-5xl text-center mb-12 font-bold'>About Me</h1>
 
-            <p className='text-xl text-justify'>I'm a passionate Front-End MERN Stack Developer with a strong focus on creating responsive, user-friendly, and visually appealing web applications. I specialize in React.js for building dynamic interfaces and have hands-on experience with the full MERN stack (MongoDB, Express.js, React.js, Node.js).</p>
+            <p className='text-xl text-justify'>I'm a passionate MERN Stack Developer with a strong focus on creating responsive, user-friendly, and visually appealing web applications. I specialize in React.js for building dynamic interfaces and have hands-on experience with the full MERN stack (MongoDB, Express.js, React.js, Node.js).</p>
             <br />
 
             <p className='text-xl text-justify'>Along with strong coding skills in HTML, CSS (Tailwind CSS, DaisyUI, Bootstrap), and JavaScript (ES6+), I bring creative design thinking using tools like Figma and Pixo to translate ideas into clean and functional UI/UX.</p>

@@ -5,12 +5,15 @@ import Home from '../components/Home';
 import ProjectBridge from '../components/ProjectBridge';
 import ProjectRoomies from '../components/ProjectRoomies';
 import ProjectBloodConnect from '../components/ProjectBloodConnect';
+import AllProjects from '../components/AllProjects';
+import ProjectNextProduct from '../components/ProjectNextProduct';
+import ErrorPage from '../components/ErrorPage';
 
 const Router = createBrowserRouter([
     {
         path: "/",
         element: <Home></Home>,
-        // errorElement: <ErrorPage></ErrorPage>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 index: true,
@@ -24,6 +27,10 @@ const Router = createBrowserRouter([
         ]
     },
     {
+        path: "/allProjects",
+        element: <AllProjects></AllProjects>,
+    },
+    {
         path: "/projectBridge",
         element: <ProjectBridge></ProjectBridge>,
     },
@@ -34,6 +41,10 @@ const Router = createBrowserRouter([
     {
         path: "/projectBloodConnect",
         element: <ProjectBloodConnect></ProjectBloodConnect>
+    },
+    {
+        path: "/projectNextProduct",
+        element: <ProjectNextProduct></ProjectNextProduct>
     },
 
 ]);

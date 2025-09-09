@@ -5,6 +5,7 @@ import React from 'react';
 import HomeProjectOne from './HomeProjectOne';
 import HomeProjectTwo from './HomeProjectTwo';
 import HomeProjectThree from './HomeProjectThree';
+import HomeProjectFour from './HomeProjectFour';
 
 
 const Projects = ({ ref }) => {
@@ -18,6 +19,7 @@ const Projects = ({ ref }) => {
                     <HomeProjectThree></HomeProjectThree>
                     <HomeProjectOne></HomeProjectOne>
                     <HomeProjectTwo></HomeProjectTwo>
+                    <HomeProjectFour></HomeProjectFour>
                 </div>
                 
                 {/* <ProjectThree></ProjectThree>

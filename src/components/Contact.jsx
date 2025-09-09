@@ -91,7 +91,7 @@ const Contact = ({ ref }) => {
 
                                 <div className='flex justify-start items-center gap-2'>
                                     <MdEmail className='text-3xl text-[#00df72]' />
-                                    <h3 className='text-xl'>Fahim.3761@gmail.com</h3>
+                                    <h3 className='text-xl'>Fahim.Arman.3747@gmail.com</h3>
                                 </div>
                             </div>
 

@@ -41,6 +41,8 @@ const ProjectBridge = () => {
                     <div className='hidden lg:flex justify-between items-center gap-8'>
                         <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/home">/home</NavLink>
 
+                        <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/allProjects">/allProjects</NavLink>
+
                         <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectBridge">./B2Bridge</NavLink>
                     </div>
 
@@ -53,9 +55,11 @@ const ProjectBridge = () => {
                             openMenu ? <RiCloseLargeFill className='text-3xl lg:hidden' /> : <HiMenu className='text-3xl lg:hidden' />
                         }
 
-                        <div className={`lg:hidden absolute flex flex-col justify-end duration-500 gap-2 bg-[#fbf7f4] rounded-md p-2 border border-gray-300 ${openMenu ? 'top-14 right-0' : '-top-25 right-0'}`}>
+                        <div className={`lg:hidden absolute flex flex-col justify-end duration-500 gap-2 bg-[#fbf7f4] rounded-md p-2 border border-gray-300 ${openMenu ? 'top-14 right-0' : '-top-35 right-0'}`}>
 
                             <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/home">/home</NavLink>
+
+                            <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/allProjects">/allProjects</NavLink>
 
                             <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectBridge">./B2Bridge</NavLink>
                         </div>
@@ -139,7 +143,7 @@ const ProjectBridge = () => {
 
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 py-4'>
 
-                        <a href="https://rad-daffodil-39264b.netlify.app/" target='_blank' rel="noopener noreferrer">
+                        <a className="col-span-1 lg:col-span-2" href="https://rad-daffodil-39264b.netlify.app/" target='_blank' rel="noopener noreferrer">
                             <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex justify-center items-center gap-2'>
                                 <PiLinkSimpleBold />
                                 Live Link
@@ -153,15 +157,13 @@ const ProjectBridge = () => {
                             </button>
                         </a>
 
-                        {/* <a href="https://github.com/Arman3747/B2Bridge-server" target='_blank' rel="noopener noreferrer">
-                    <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex items-center justify-center gap-2'>
-                        <FaGithub />
-                        Github Server
-                    </button>
-                </a> */}
+                        <a href="https://github.com/Arman3747/B2Bridge-server" target='_blank' rel="noopener noreferrer">
+                            <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex items-center justify-center gap-2'>
+                                <FaGithub />
+                                Github Server
+                            </button>
+                        </a>
                     </div>
-
-
                 </div>
             </div>
 
@@ -309,7 +311,9 @@ const ProjectBridge = () => {
                 <div className='flex justify-center items-center gap-4 px-16'>
                     <div className='flex justify-between items-center gap-8'>
                         <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/home">/home</NavLink>
-
+                        
+                        <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/allProjects">/allProjects</NavLink>
+                        
                         <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectBridge">./B2Bridge</NavLink>
                     </div>
                 </div>

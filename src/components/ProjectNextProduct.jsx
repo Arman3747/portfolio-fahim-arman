@@ -9,10 +9,9 @@ import { Carousel } from 'react-responsive-carousel';
 import { PiLinkSimpleBold } from "react-icons/pi";
 import { FaGithub } from "react-icons/fa";
 
-const ProjectRoomies = () => {
+const ProjectNextProduct = () => {
 
     const { pathname } = useLocation();
-
     const [openMenu, setOpenMenu] = useState(false);
 
     useEffect(() => {
@@ -39,7 +38,7 @@ const ProjectRoomies = () => {
 
                         <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/allProjects">/allProjects</NavLink>
 
-                        <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectBridge">./Roomies</NavLink>
+                        <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectNextProduct">./NextProduct</NavLink>
                     </div>
 
                     <div>
@@ -56,8 +55,8 @@ const ProjectRoomies = () => {
                             <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/home">/home</NavLink>
 
                             <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/allProjects">/allProjects</NavLink>
-
-                            <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectBridge">./Roomies</NavLink>
+                            
+                            <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectNextProduct">./NextProduct</NavLink>
                         </div>
                     </div>
                 </div>
@@ -66,32 +65,25 @@ const ProjectRoomies = () => {
             <div className='my-12'>
                 <h1 className='text-4xl lg:text-5xl font-bold mb-6'>
                     <span className='border-b-2 border-[#00df72]'>
-                        Roomies
+                        NextProduct
                     </span>
                 </h1>
-                <p className='text-lg lg:text-2xl font-medium text-justify'>
-                    Roomies is a web app for finding roommates or rooms to rent, offering secure authentication, detailed listings, like-to-contact features, and a personal dashboard with posts, likes, and rent analytics.
+                <p className='text-lg lg:text-2xl font-medium'>
+                    NextProduct makes it easy for users to add products while allowing everyone to browse, view, and explore countless new items.
                 </p>
             </div>
 
             <div className='flex flex-col lg:flex-row  justify-between items-center gap-8'>
-
                 <div className='flex-1 bg-white border-2 rounded-md'>
                     <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
                         <div>
-                            <img className='h-60 lg:h-120 w-auto object-contain' src="https://i.ibb.co/Q3ymNpkh/Roomies-github.png" />
+                            <img className='h-60 lg:h-120 w-auto object-contain' src="https://i.ibb.co/tpy8hRDX/Next-Product-Home-001.png" />
                         </div>
                         <div>
-                            <img className='h-60 lg:h-120 w-auto object-contain' src="https://i.ibb.co/DDzPJ751/btobrodge-002.png" />
+                            <img className='h-60 lg:h-120 w-auto object-contain' src="https://i.ibb.co/23C7PL5D/Next-Product-002.png" />
                         </div>
                         <div>
-                            <img className='h-60 lg:h-120 w-auto object-contain' src="https://i.ibb.co/Rk7p7LPj/Roomies-post-03.png" />
-                        </div>
-                        <div>
-                            <img className='h-60 lg:h-120 w-auto object-contain' src="https://i.ibb.co/bMyXQHzJ/Roomies-post-04.png" />
-                        </div>
-                        <div>
-                            <img className='h-60 lg:h-120 w-auto object-contain' src="https://i.ibb.co/V06yJgMc/Roomies-post-05.png" />
+                            <img className='h-60 lg:h-120 w-auto object-contain' src="https://i.ibb.co/nqKhHjpV/Next-Product-03.png" />
                         </div>
                     </Carousel>
                 </div>
@@ -99,116 +91,68 @@ const ProjectRoomies = () => {
                 <div className='flex-1'>
                     <h1 className='text-3xl font-semibold mb-8'>
                         <span className='border-b-2 border-[#00df72]'>
-                            Key Features of Roomies
+                            Key Features of NextProduct
                         </span>
                     </h1>
 
                     <div className='flex gap-2 mb-2'>
                         <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
-                        <div className='text-xl font-medium'>Roomies helps you find and post rooms for rent with ease.</div>
-                    </div>
-
-                    <div className='flex gap-2 mb-2'>
-                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
-                        <div className='text-xl font-medium'>Like a listing to reveal the owner's contact details.</div>
-                    </div>
-
-                    <div className='flex gap-2 mb-2'>
-                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
-                        <div className='text-xl font-medium'>View your posts, likes, and stats in your personal dashboard.</div>
-                    </div>
-
-                    <div className='flex gap-2 mb-2'>
-                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
                         <div className='text-xl font-medium'>
-                            Users can view, update, and delete only their own roommate posts.
+                            Public Landing Page with Navbar, Hero, Product Highlights, and Footer.
                         </div>
                     </div>
 
                     <div className='flex gap-2 mb-2'>
                         <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
                         <div className='text-xl font-medium'>
-                            Public listing page shows all roommate posts with search and 'See More' options.
+                            Login with Google using NextAuth.js.
                         </div>
                     </div>
 
                     <div className='flex gap-2 mb-2'>
                         <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
                         <div className='text-xl font-medium'>
-                            Switch between light and dark modes for better accessibility and comfort.
+                            Public Product List page showing all products.
+                        </div>
+                    </div>
+
+                    <div className='flex gap-2 mb-2'>
+                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
+                        <div className='text-xl font-medium'>
+                            Product Details page with full product information.
+                        </div>
+                    </div>
+
+                    <div className='flex gap-2 mb-2'>
+                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
+                        <div className='text-xl font-medium'>
+                            Protected Add Product page for authenticated users to add new products.
                         </div>
                     </div>
 
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 py-4'>
-                        <a className="col-span-1 lg:col-span-2" href="https://fascinating-sunflower-cfec7f.netlify.app/" target='_blank' rel="noopener noreferrer">
+
+                        <a href="https://nextproduct-sand.vercel.app/" target='_blank' rel="noopener noreferrer">
                             <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex justify-center items-center gap-2'>
                                 <PiLinkSimpleBold />
                                 Live Link
                             </button>
                         </a>
 
-                        <a href="https://github.com/Arman3747/roomies-client" target='_blank' rel="noopener noreferrer">
+                        <a href="https://github.com/Arman3747/NextProduct" target='_blank' rel="noopener noreferrer">
                             <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex justify-center items-center gap-2'>
                                 <FaGithub />
-                                Github Client
-                            </button>
-                        </a>
-
-                        <a href="https://github.com/Arman3747/roomies-server" target='_blank' rel="noopener noreferrer">
-                            <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex items-center justify-center gap-2'>
-                                <FaGithub />
-                                Github Server
+                                Github
                             </button>
                         </a>
                     </div>
                 </div>
             </div>
 
-            {/* <div className='bg-white border-2 rounded-md'>
-                <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/Q3ymNpkh/Roomies-github.png" />
-                    </div>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/pjKWfvJq/Roomies-post-02.png" />
-                    </div>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/Rk7p7LPj/Roomies-post-03.png" />
-                    </div>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/bMyXQHzJ/Roomies-post-04.png" />
-                    </div>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/V06yJgMc/Roomies-post-05.png" />
-                    </div>
-                </Carousel>
-            </div> */}
-
-            {/* <div className='my-12'>
-                <h3 className='text-2xl lg:text-3xl font-semibold mb-8'>Key Features of Roomies</h3>
-
-
-                {features.map((feature) => (
-                    <div key={feature.roomiesId} className='flex gap-2 mb-2'>
-                        <div>
-                            <span className="text-green-500 text-3xl font-medium">✓</span>
-                        </div>
-
-                        <div className='text-lg lg:text-xl font-medium'>
-                            <span className='font-bold text-xl lg:text-2xl'>
-                                {feature.roomiesFeature}
-                            </span> -&nbsp; {feature.roomiesDescription}
-                        </div>
-                    </div>
-                ))}
-            </div> */}
-
-
-
             <div>
                 <h3 className='text-2xl lg:text-3xl font-semibold my-12'>
                     <span className='border-b-2 border-[#00df72]'>
-                        Main Technology Stack - Roomies
+                        Main Technology Stack - NextProduct
                     </span>
                 </h3>
 
@@ -220,44 +164,25 @@ const ProjectRoomies = () => {
 
                     <div className='col-span-1 lg:col-span-3 flex flex-wrap justify-start items-center gap-4'>
 
-                        {/* <div className="border-2 p-1 flex justify-center items-center gap-2 bg-[#333333] rounded-md">
-                            <FaHtml5 className='text-xl text-[#E34F26]' />
-                            <p className="text-white">HTML5</p>
-                        </div>
-
-                        <div className="border-2 p-1 flex justify-center items-center gap-2 bg-[#333333] rounded-md">
-                            <FaCss3Alt className='text-xl text-[#663399]' />
-                            <p className="text-white">CSS3</p>
-                        </div> */}
-
-
-
-
                         <img src="https://img.shields.io/badge/HTML5-333333?logo=html5" alt="" />
                         <img src="https://img.shields.io/badge/CSS3-333333?logo=css" alt="" />
                         <img src="https://img.shields.io/badge/JavaScript-333333?logo=javascript" alt="" />
                         <img src="https://img.shields.io/badge/React-333333?logo=react" alt="" />
                         <img src="https://img.shields.io/badge/Tailwind_CSS-333333?logo=tailwindcss" alt="" />
                         <img src="https://img.shields.io/badge/Daisy_UI-333333?logo=daisyui" alt="" />
-                        <img src="https://img.shields.io/badge/React_Router-333333?logo=reactrouter" alt="" />
-                        <img src="https://img.shields.io/badge/Swiper-333333?logo=swiper" alt="" />
+                        <img src="https://img.shields.io/badge/Next.js-333333?logo=nextdotjs" alt="" />
                     </div>
 
                     <div className='text-right text-lg lg:text-2xl col-span-1'>Backend</div>
                     <div className='col-span-1 lg:col-span-3 flex flex-wrap justify-start items-center gap-4'>
-                        <img src="https://img.shields.io/badge/Node.js-333333?logo=nodedotjs" alt="" />
-                        <img src="https://img.shields.io/badge/Express.js-333333?logo=express" alt="" />
                         <img src="https://img.shields.io/badge/MongoDB-333333?logo=mongodb" alt="" />
-                        <img src="https://img.shields.io/badge/Nodemon-333333?logo=nodemon" alt="" />
-
                     </div>
 
                     <div className='text-right text-lg lg:text-2xl col-span-1'>Authentication
                         <span className='hidden lg:inline-block'>& Security</span>
                     </div>
                     <div className='col-span-1 lg:col-span-3 flex flex-wrap justify-start items-center gap-4'>
-                        <img src="https://img.shields.io/badge/Firebase-333333?logo=firebase" alt="" />
-                        <img src="https://img.shields.io/badge/JSON_Web_Token-333333?logo=jsonwebtokens" alt="" />
+                        <img src="https://img.shields.io/badge/%20NextAuth.js-333333?logo=auth0" alt="" />
                     </div>
 
                     <div className='text-right text-lg lg:text-2xl col-span-1'>Supporting Tools</div>
@@ -276,7 +201,6 @@ const ProjectRoomies = () => {
                     <div className='text-right text-lg lg:text-2xl col-span-1'>Web Hosting <span className='hidden lg:inline-block'>& Deployment</span></div>
                     <div className='col-span-1 lg:col-span-3 flex flex-wrap justify-start items-center gap-4'>
                         <img src="https://img.shields.io/badge/Vercel-333333?logo=vercel" alt="" />
-                        <img src="https://img.shields.io/badge/Netlify-333333?logo=netlify" alt="" />
                     </div>
                 </div>
             </div>
@@ -289,7 +213,7 @@ const ProjectRoomies = () => {
                 </h1>
 
                 <p className="text-lg text-justify">
-                    Faced challenges with secure authentication, protected routes, conditional data display, responsiveness, and user feedback. Solved using Firebase, server-side filtering, like-based reveals, Tailwind CSS, DaisyUI, toast notifications, SweetAlert, and loading spinners for seamless experience.
+                    Challenges included handling authentication, protecting routes, and managing product data securely. Solutions involved using NextAuth.js for login, middleware for route protection, and MongoDB integration for reliable product storage and retrieval.
                 </p>
             </div>
 
@@ -301,7 +225,7 @@ const ProjectRoomies = () => {
                 </h1>
 
                 <p className="text-lg text-justify">
-                    Roomies plans to add real-time roommate chat, advanced lifestyle-based search filters, a user and listing review system, and launch mobile apps for Android and iOS to enhance convenience and engagement.
+                    Future plans include adding product editing and deletion features, implementing user roles (admin/user), integrating payment gateways, enhancing UI with better design, and deploying the application with full CI/CD automation for scalability.
                 </p>
             </div>
 
@@ -312,7 +236,7 @@ const ProjectRoomies = () => {
 
                         <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/allProjects">/allProjects</NavLink>
 
-                        <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectBridge">./Roomies</NavLink>
+                        <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectNextProduct">./NextProduct</NavLink>
                     </div>
                 </div>
             </div>
@@ -320,4 +244,4 @@ const ProjectRoomies = () => {
     );
 };
 
-export default ProjectRoomies;
+export default ProjectNextProduct;

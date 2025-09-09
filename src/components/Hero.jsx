@@ -11,8 +11,8 @@ const Hero = ({ ref }) => {
             <div className='flex flex-col-reverse lg:flex-row justify-evenly items-center gap-4'>
                 <div className='flex-1'>
                     <h1 className='text-5xl lg:text-7xl mb-4 lg:mb-8'> Fahim Arman</h1>
-                    <h3 className='text-xl lg:text-3xl mb-4'> <span className='border-b-2 border-[#00df72]'>Front-End Developer (MERN Stack)</span></h3>
-                    <p className='text-xl'>Creative Front-End Developer skilled in MERN Stack, building responsive, user-friendly, and dynamic web applications.</p>
+                    <h3 className='text-xl lg:text-3xl mb-4'> <span className='border-b-2 border-[#00df72]'>MERN Stack Developer</span></h3>
+                    <p className='text-xl'>Creative MERN Stack Developer skilled in designing and developing responsive, user-friendly, and dynamic web applications with modern technologies.</p>
 
                     <div className='flex justify-start items-center gap-4 my-6'>
 
@@ -38,7 +38,7 @@ const Hero = ({ ref }) => {
                     <button className='bg-[#00df72] px-16 py-4 text-xl rounded-md'>
 
 
-                        <a href="https://drive.google.com/file/d/1FmA__Ei_5LrEheL8Hi9cWE750rsuBefh/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <a href="https://drive.google.com/file/d/1PFDGISYJOvCHCB36lG1unE_bpnmp_Cst/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                             <span className='flex justify-center items-center gap-2'>
                                 <SiReaddotcv />
                                 
@@ -50,7 +50,7 @@ const Hero = ({ ref }) => {
                 </div>
                 <div className='flex-1 '>
                     <div className='flex justify-center items-center'>
-                        <img className='border-2 rounded-full w-md' src="https://i.ibb.co/bjvNNZsL/developer-512.jpg" alt="" />
+                        <img className='border-2 rounded-full w-md' src="https://i.ibb.co/4R5z8Wtb/Fahim-Profile-512-Tiny.png" alt="" />
                     </div>
                 </div>
             </div>
