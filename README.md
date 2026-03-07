@@ -1,9 +1,10 @@
-![Portfolio](https://i.ibb.co/wNTgZ0FC/portfolio.png)
+![Portfolio](https://i.ibb.co/2YKXY4gw/hero-github-personal-portfolio.png)
 
 # Portfolio (Fahim Arman)
 
-Front-End Developer (MERN Stack).   
-Creative Front-End Developer skilled in MERN Stack, building responsive, user-friendly, and dynamic web applications.
+Full Stack Developer (MERN & PERN)
+
+Building fast, scalable, and user-friendly web applications with React, Next.js, Node.js, MongoDB, and PostgreSQL while focusing on performance, clean code, and modern UI development.
 
 ## Live Link
 

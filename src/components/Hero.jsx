@@ -50,7 +50,11 @@ const Hero = ({ ref }) => {
                 </div>
                 <div className='flex-1 '>
                     <div className='flex justify-center items-center'>
+                        {/* Real picture  */}
                         <img className='border-2 rounded-full w-md' src="https://i.ibb.co/mCW2zvSg/Fahim-Arman-new-512.jpg" alt="" />
+
+                        {/* avater picture  */}
+                        {/* <img className='border-2 rounded-full w-md' src="https://i.ibb.co/svTnYLLv/developer-512.jpg" alt="" /> */}
                     </div>
                 </div>
             </div>
