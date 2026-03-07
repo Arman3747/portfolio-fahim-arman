@@ -265,10 +265,8 @@ const ProjectBloodConnect = () => {
                         <img src="https://img.shields.io/badge/React_Router-333333?logo=reactrouter" alt="" />
                         <img src="https://img.shields.io/badge/Axios-333333?logo=axios" alt="" />
                         <img src="https://img.shields.io/badge/React_Hook_Form-333333?logo=reacthookform" alt="" />
-                        <img src="https://img.shields.io/badge/TanStack_Query-333333?logo=reactquery
-" alt="" />
+                        <img src="https://img.shields.io/badge/TanStack_Query-333333?logo=reactquery" alt="" />
                         
-
                     </div>
 
                     <div className='text-right text-lg lg:text-2xl col-span-1'>Backend</div>

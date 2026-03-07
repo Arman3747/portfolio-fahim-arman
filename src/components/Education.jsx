@@ -8,6 +8,14 @@ const Education = ({ ref }) => {
 
                 <div className='mb-12'>
                     <div className='flex justify-between items-center mb-2'>
+                        <h3 className='text-2xl font-bold'>Professional year, Information Technology</h3>
+                        <h3 className='hidden lg:block text-2xl font-bold'>Dec 2024 - Jan 2026</h3>
+                    </div>
+                    <h4 className='text-lg lg:text-xl'>Performance Education, Sydney, Australia</h4>
+                </div>
+
+                <div className='mb-12'>
+                    <div className='flex justify-between items-center mb-2'>
                         <h3 className='text-2xl font-bold'>Masters of Data Science</h3>
                         <h3 className='hidden lg:block text-2xl font-bold'>Mar 2019 - Nov 2021</h3>
                     </div>

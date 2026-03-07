@@ -19,15 +19,33 @@ const Skills = ({ ref }) => {
                     <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/s9mr5SrN/tailwindcss.png" alt="" />
                 </div>
                 <div>
+                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/jP4LxVh3/shadcn-ui.png" alt="" />
+                </div>
+                {/* <div>
                     <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/zhRy1T49/bootstrap.png" alt="" />
-                </div>
-                <div>
-                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/mFqQR63X/git.png" alt="" />
-                </div>
-                <div>
-                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/ZzzsVN2s/firebase.png" alt="" />
-                </div>
+                </div> */}
                 
+
+                <div>
+                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/B5bBssz7/javacsript.png" alt="" />
+                </div>
+                <div>
+                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/5xFFTfqq/type-Script.png" alt="" />
+                </div>
+                <div>
+                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/VYycSH4m/react.png" alt="" />
+                </div>
+                <div>
+                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/JRKVkbdM/redux.png" alt="" />
+                </div>
+                <div>
+                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/Gfz1Mgd8/nextjs.png" alt="" />
+                </div>
+                <div>
+                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/Rk2kSVLB/next-auth.png" alt="" />
+                </div>
+
+
                 {/* <div>
                     <img className='mx-2 lg:mx-12 my-8 p-2 w-[64px] lg:w-[132px]' src="https://i.ibb.co/mF60r9SF/npm.png" alt="" />
                 </div>
@@ -39,15 +57,7 @@ const Skills = ({ ref }) => {
 
             {/* <Marquee direction="right"> */}
             <div className='mb-2 flex justify-center items-center'>
-                <div>
-                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/B5bBssz7/javacsript.png" alt="" />
-                </div>
-                <div>
-                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/VYycSH4m/react.png" alt="" />
-                </div>
-                <div>
-                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/Gfz1Mgd8/nextjs.png" alt="" />
-                </div>
+
                 <div>
                     <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/JFM8krnK/nodejs.png" alt="" />
                 </div>
@@ -57,14 +67,45 @@ const Skills = ({ ref }) => {
                 <div>
                     <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/JwBVXnwW/mongodb.png" alt="" />
                 </div>
+                <div>
+                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/608wkvZX/postgresql.png" alt="" />
+                </div>
+                <div>
+                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/VWMXw0Vr/redis.png" alt="" />
+                </div>
+                <div>
+                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/ZzzsVN2s/firebase.png" alt="" />
+                </div>
+
+                <div>
+                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/ynQXg9vY/mongoosejs.png" alt="" />
+                </div>
+
+                <div>
+                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/hRgLWPVg/prisma.png" alt="" />
+                </div>
+
+                <div>
+                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/NnNLkzNz/postman.png" alt="" />
+                </div>
+
+                <div>
+                    <img className='mx-2 my-2 p-2 w-[64px] md:w-[96px] lg:w-[112px]' src="https://i.ibb.co/mFqQR63X/git.png" alt="" />
+                </div>
                 {/* <div>
                     <img className='mx-2 lg:mx-12 my-8 p-2 w-[64px] lg:w-[132px]' src="https://i.ibb.co/KzqnXYLT/react-router.png" alt="" />
                 </div> */}
                 {/* </Marquee> */}
             </div>
             <div className='mb-2 flex justify-center items-center'>
-                
-                
+
+
+
+
+
+
+
+
                 {/* </Marquee> */}
             </div>
         </div>

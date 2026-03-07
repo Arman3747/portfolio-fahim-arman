@@ -11,8 +11,8 @@ const Hero = ({ ref }) => {
             <div className='flex flex-col-reverse lg:flex-row justify-evenly items-center gap-4'>
                 <div className='flex-1'>
                     <h1 className='text-5xl lg:text-7xl mb-4 lg:mb-8'> Fahim Arman</h1>
-                    <h3 className='text-xl lg:text-3xl mb-4'> <span className='border-b-2 border-[#00df72]'>MERN Stack Developer</span></h3>
-                    <p className='text-xl'>Creative MERN Stack Developer skilled in designing and developing responsive, user-friendly, and dynamic web applications with modern technologies.</p>
+                    <h3 className='text-xl lg:text-3xl mb-4'> <span className='border-b-2 border-[#00df72]'>Full Stack Developer (MERN & PERN)</span></h3>
+                    <p className='text-xl'>Building fast, scalable, and user-friendly web applications with React, Next.js, Node.js, MongoDB, and PostgreSQL while focusing on performance, clean code, and modern UI development.</p>
 
                     <div className='flex justify-start items-center gap-4 my-6'>
 
@@ -50,7 +50,7 @@ const Hero = ({ ref }) => {
                 </div>
                 <div className='flex-1 '>
                     <div className='flex justify-center items-center'>
-                        <img className='border-2 rounded-full w-md' src="https://i.ibb.co/4R5z8Wtb/Fahim-Profile-512-Tiny.png" alt="" />
+                        <img className='border-2 rounded-full w-md' src="https://i.ibb.co/mCW2zvSg/Fahim-Arman-new-512.jpg" alt="" />
                     </div>
                 </div>
             </div>
