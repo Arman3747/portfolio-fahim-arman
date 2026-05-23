@@ -2,7 +2,7 @@
 
 # Portfolio (Fahim Arman)
 
-Full Stack Developer (MERN & PERN)
+Full Stack Developer (MERN, PERN & Next.js)
 
 Building fast, scalable, and user-friendly web applications with React, Next.js, Node.js, MongoDB, and PostgreSQL while focusing on performance, clean code, and modern UI development.
 

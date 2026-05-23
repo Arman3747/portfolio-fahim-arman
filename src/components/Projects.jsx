@@ -6,7 +6,9 @@ import HomeProjectOne from './HomeProjectOne';
 import HomeProjectTwo from './HomeProjectTwo';
 import HomeProjectThree from './HomeProjectThree';
 import HomeProjectFour from './HomeProjectFour';
+import { Link } from 'react-router';
 
+import { FaCode } from "react-icons/fa6";
 
 const Projects = ({ ref }) => {
     return (
@@ -21,11 +23,24 @@ const Projects = ({ ref }) => {
                     <HomeProjectTwo></HomeProjectTwo>
                     <HomeProjectFour></HomeProjectFour>
                 </div>
-                
+
+                <br />
+                <br />
+                <br />
+
+                <div >
+                    <Link to="/allProjects" className='flex justify-center items-center'>
+                        <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-1/2 cursor-pointer flex justify-center items-center gap-2'>
+                            <FaCode />
+                            All Projects
+                        </button>
+                    </Link>
+                </div>
+
                 {/* <ProjectThree></ProjectThree>
                 <ProjectsOne></ProjectsOne>
                 <ProjectsTwo></ProjectsTwo> */}
-                
+
             </div>
         </div>
     );

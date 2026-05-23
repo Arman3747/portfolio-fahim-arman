@@ -1,4 +1,6 @@
 import React from 'react';
+import { Typewriter } from 'react-simple-typewriter'
+import { GoCommandPalette } from "react-icons/go";
 
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithubSquare } from "react-icons/fa";
@@ -10,13 +12,35 @@ const Hero = ({ ref }) => {
         <div ref={ref} id='hero' className='scroll-mt-36 my-2 lg:my-12 px-2 lg:px-16'>
             <div className='flex flex-col-reverse lg:flex-row justify-evenly items-center gap-4'>
                 <div className='flex-1'>
-                    <h1 className='text-5xl lg:text-7xl mb-4 lg:mb-8'> Fahim Arman</h1>
-                    <h3 className='text-xl lg:text-3xl mb-4'> <span className='border-b-2 border-[#00df72]'>Full Stack Developer (MERN & PERN)</span></h3>
-                    <p className='text-xl'>Building fast, scalable, and user-friendly web applications with React, Next.js, Node.js, MongoDB, and PostgreSQL while focusing on performance, clean code, and modern UI development.</p>
+                    <h1 className='text-5xl lg:text-7xl mb-4 lg:mb-8'>Fahim Arman</h1>
+                    {/* <h3 className='text-xl lg:text-3xl mb-4'> <span className='border-b-2 border-[#00df72]'>Full Stack Developer (MERN & PERN)</span></h3> */}
+
+                    <h3 className='text-xl lg:text-3xl mb-4 flex items-end'> 
+                        <GoCommandPalette className='text-[#00df72]' />
+                        <span>&nbsp;</span>
+                        <span className='font-light' >
+                            <Typewriter
+                                words={['Full Stack Developer', 'MERN Stack Developer', 'PERN Stack Developer', 'JavaScript Developer', 'Node.js Developer', 'React.js Developer', 'Next.js Developer', 'Web Developer', 'SaaS Developer', 'Software Engineer']}
+                                loop={0}
+                                cursor
+                                cursorStyle='|'
+                                typeSpeed={200}
+                                deleteSpeed={100}
+                                delaySpeed={1000}
+                            />
+                        </span>
+                    </h3>
+
+
+                    {/* <p className='text-xl'>Building fast, scalable, and user-friendly web applications with React, Next.js, Node.js, MongoDB, and PostgreSQL while focusing on performance, clean code, and modern UI development.</p> */}
+
+                    <p className='text-xl'>Full Stack JavaScript Developer specializing in MERN Stack, PERN Stack, and Next.js, building fast, scalable, and modern web applications with clean UI and high-performance backend systems.</p>
+
+                    {/* <p className='text-xl'>Full Stack JavaScript Developer specializing in MERN Stack, PERN Stack, and Next.js, building fast, scalable, and modern web applications using React, TypeScript, Redux, Prisma, Node.js, and Express.js with clean UI and high-performance backend systems.</p> */}
 
                     <div className='flex justify-start items-center gap-4 my-6'>
 
-                        <a href="https://au.linkedin.com/in/fahim37/" target="_blank">
+                        <a href="https://au.linkedin.com/in/fahim37" target="_blank">
                             <button className='hover:cursor-pointer'>
                                 <FaLinkedin className='text-center bg-[#fbf7f4] w-9 h-9 text-[#0077B5] m-0 p-0 rounded-xs' />
                             </button>
@@ -28,7 +52,7 @@ const Hero = ({ ref }) => {
                             </button>
                         </a>
 
-                        <a href="https://www.instagram.com/fahimarman1/" target="_blank">
+                        <a href="https://www.instagram.com/fahimarman1" target="_blank">
                             <button className='hover:cursor-pointer'>
                                 <FaInstagramSquare className='text-center w-9 h-9 text-[#fbf7f4] bg-gradient-to-tr from-[#feda75] via-[#fa7e1e] via-[#d62976] via-[#962fbf] to-[#4f5bd5] m-0 p-0 rounded-sm' />
                             </button>
@@ -41,7 +65,7 @@ const Hero = ({ ref }) => {
                         <a href="https://drive.google.com/file/d/1PFDGISYJOvCHCB36lG1unE_bpnmp_Cst/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                             <span className='flex justify-center items-center gap-2'>
                                 <SiReaddotcv />
-                                
+
                                 <span>Resume</span>
                             </span>
 

@@ -23,6 +23,8 @@ const ErrorPage = () => {
                         <br />
                         <br />
 
+                        
+
                         <p className='font-normal text-lg md:text-4xl lg:text-5xl'><Link className='text-[#00df72] hover:border-b-2 hover:border-[#333333] cursor-pointer' to="/">VisitHomePage<span className='text-[#333333]'>();</span></Link></p>
                     </div>
                 </div>

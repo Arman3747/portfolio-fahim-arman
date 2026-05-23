@@ -8,6 +8,7 @@ import ProjectBloodConnect from '../components/ProjectBloodConnect';
 import AllProjects from '../components/AllProjects';
 import ProjectNextProduct from '../components/ProjectNextProduct';
 import ErrorPage from '../components/ErrorPage';
+import ProjectBookNest from '../components/ProjectBookNest';
 
 const Router = createBrowserRouter([
     {
@@ -19,11 +20,12 @@ const Router = createBrowserRouter([
                 index: true,
                 path: '/home',
                 element: <Home></Home>
-            },
-            {
-                path: "/projectRoomiesdfsd",
-                element: <div>Hello World</div>,
             }
+            // },
+            // {
+            //     path: "/projectRoomiesdfsd",
+            //     element: <div>Hello World</div>,
+            // }
         ]
     },
     {
@@ -45,6 +47,10 @@ const Router = createBrowserRouter([
     {
         path: "/projectNextProduct",
         element: <ProjectNextProduct></ProjectNextProduct>
+    },
+    {
+        path: "/projectBookNest",
+        element: <ProjectBookNest></ProjectBookNest>
     },
 
 ]);

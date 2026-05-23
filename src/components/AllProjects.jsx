@@ -7,6 +7,7 @@ import HomeProjectThree from './HomeProjectThree';
 import HomeProjectOne from './HomeProjectOne';
 import HomeProjectTwo from './HomeProjectTwo';
 import HomeProjectFour from './HomeProjectFour';
+import HomeProjectFive from './HomeProjectFive';
 
 const AllProjects = () => {
 
@@ -69,6 +70,7 @@ const AllProjects = () => {
                 <HomeProjectOne></HomeProjectOne>
                 <HomeProjectTwo></HomeProjectTwo>
                 <HomeProjectFour></HomeProjectFour>
+                <HomeProjectFive></HomeProjectFive>
             </div>
 
             {/* footer  */}
