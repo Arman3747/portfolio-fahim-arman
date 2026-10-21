@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from 'react-router';
 import { HiMenu } from "react-icons/hi";
 import { RiCloseLargeFill } from "react-icons/ri";
-
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { PiLinkSimpleBold } from "react-icons/pi";
@@ -55,7 +54,7 @@ const ProjectNextProduct = () => {
                             <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/home">/home</NavLink>
 
                             <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/allProjects">/allProjects</NavLink>
-                            
+
                             <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectNextProduct">./NextProduct</NavLink>
                         </div>
                     </div>
@@ -163,7 +162,6 @@ const ProjectNextProduct = () => {
                     </div>
 
                     <div className='col-span-1 lg:col-span-3 flex flex-wrap justify-start items-center gap-4'>
-
                         <img src="https://img.shields.io/badge/HTML5-333333?logo=html5" alt="" />
                         <img src="https://img.shields.io/badge/CSS3-333333?logo=css" alt="" />
                         <img src="https://img.shields.io/badge/JavaScript-333333?logo=javascript" alt="" />

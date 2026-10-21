@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router';
-
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
@@ -12,8 +11,6 @@ import { SiReactrouter } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { AiOutlineJavaScript } from "react-icons/ai";
 import { FaNodeJs } from "react-icons/fa";
-
-
 import { FaCode } from "react-icons/fa6";
 import { PiLinkSimpleBold } from "react-icons/pi";
 
@@ -51,23 +48,7 @@ const ProjectsTwo = () => {
                     </h1>
                     <p className='text-xl text-justify'>Roomies is a web app for finding roommates or rooms to rent, offering secure authentication, detailed listings, like-to-contact features, and a personal dashboard with posts, likes, and rent analytics.</p>
 
-                    {/* <div className='flex gap-2 mb-2'>
-                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
-                        <div className='text-xl font-medium'>Roomies helps you find and post rooms for rent with ease.</div>
-                    </div>
-
-                    <div className='flex gap-2 mb-2'>
-                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
-                        <div className='text-xl font-medium'>Like a listing to reveal the owner's contact details.</div>
-                    </div>
-
-                    <div className='flex gap-2 mb-2'>
-                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
-                        <div className='text-xl font-medium'>View your posts, likes, and stats in your personal dashboard.</div>
-                    </div> */}
-
                     <div className='grid grid-cols-8 place-items-center gap-2 my-8'>
-
                         <AiOutlineJavaScript className='text-5xl text-[#FFED29] border-2 bg-[#333333] border-[#333333] p-2 rounded-md' />
                         <FaReact className='text-5xl text-[#61DAFB] border-2 border-[#333333] p-2 rounded-md' />
                         <FaNodeJs className='text-5xl text-[#5FA04E] border-2 border-[#333333] p-2 rounded-md' />

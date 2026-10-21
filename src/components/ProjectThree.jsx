@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router';
-
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
@@ -12,8 +11,6 @@ import { SiReactrouter } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { AiOutlineJavaScript } from "react-icons/ai";
 import { FaNodeJs } from "react-icons/fa";
-
-
 import { FaCode } from "react-icons/fa6";
 import { PiLinkSimpleBold } from "react-icons/pi";
 
@@ -21,8 +18,6 @@ const ProjectThree = () => {
     return (
         <div className='my-12'>
             <div className='flex flex-col lg:flex-row  justify-between items-center gap-8'>
-
-
                 <div className='flex-1 bg-white border-2 rounded-md'>
                     <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
                         <div>
@@ -69,28 +64,11 @@ const ProjectThree = () => {
                     </h1>
                     <p className='text-xl text-justify'>Blood Connect is a web platform that instantly connects blood donors and seekers through location-based search, verified profiles, and role-based dashboards, making blood donation faster, organized, and reliable for urgent needs.</p>
 
-                    {/* <div className='flex gap-2 mb-2'>
-                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
-                        <div className='text-xl font-medium'>Quickly find blood donors by blood group and location.</div>
-                    </div>
-
-                    <div className='flex gap-2 mb-2'>
-                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
-                        <div className='text-xl font-medium'>Separate interfaces for Admins, Volunteers, and Donors to manage requests.</div>
-                    </div>
-
-                    <div className='flex gap-2 mb-2'>
-                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
-                        <div className='text-xl font-medium'>Create, track, and update blood donation requests securely.</div>
-                    </div> */}
-
                     <div className='grid grid-cols-8 place-items-center gap-2 my-8'>
-
                         <AiOutlineJavaScript className='text-5xl text-[#FFED29] border-2 bg-[#333333] border-[#333333] p-2 rounded-md' />
                         <FaReact className='text-5xl text-[#61DAFB] border-2 border-[#333333] p-2 rounded-md' />
                         <FaNodeJs className='text-5xl text-[#5FA04E] border-2 border-[#333333] p-2 rounded-md' />
                         <SiExpress className='text-5xl text-[#000000] border-2 border-[#333333] p-2 rounded-md' />
-
                         <SiMongodb className='text-5xl text-[#47A248] border-2 border-[#333333] p-2 rounded-md' />
                         <RiTailwindCssFill className='text-5xl text-[#06B6D4] border-2 border-[#333333] p-2 rounded-md' />
                         <SiReactrouter className='text-5xl text-[#CA4245] border-2 border-[#333333] p-2 rounded-md' />

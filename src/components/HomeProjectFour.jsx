@@ -2,18 +2,11 @@ import React from 'react';
 import { Link } from 'react-router';
 
 import { FaReact } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiReactrouter } from "react-icons/si";
-import { IoLogoFirebase } from "react-icons/io5";
 import { AiOutlineJavaScript } from "react-icons/ai";
-import { FaNodeJs } from "react-icons/fa";
-
-
 import { SiNextdotjs } from "react-icons/si";
 import { SiVercel } from "react-icons/si";
-
 import { FaCode } from "react-icons/fa6";
 
 const HomeProjectFour = () => {
@@ -42,7 +35,7 @@ const HomeProjectFour = () => {
                         <SiNextdotjs className='text-5xl text-[#333333] border-2 border-[#333333] p-2 rounded-md' />
 
                         <FaReact className='text-5xl text-[#61DAFB] border-2 border-[#333333] p-2 rounded-md' />
-                        
+
                         <SiMongodb className='text-5xl text-[#47A248] border-2 border-[#333333] p-2 rounded-md' />
                         <RiTailwindCssFill className='text-5xl text-[#06B6D4] border-2 border-[#333333] p-2 rounded-md' />
 
@@ -60,8 +53,6 @@ const HomeProjectFour = () => {
                     </div>
                 </div>
             </div>
-
-
         </div>
     );
 };

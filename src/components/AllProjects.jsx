@@ -8,6 +8,7 @@ import HomeProjectOne from './HomeProjectOne';
 import HomeProjectTwo from './HomeProjectTwo';
 import HomeProjectFour from './HomeProjectFour';
 import HomeProjectFive from './HomeProjectFive';
+import HomeProjectSix from './HomeProjectSix';
 
 const AllProjects = () => {
 
@@ -58,14 +59,15 @@ const AllProjects = () => {
                     </div>
                 </div>
             </div>
-            
+
             {/* header  */}
             <div className='my-12 px-2 lg:px-16'>
                 <h1 className='scroll-mt-32 text-5xl text-center mb-12 font-bold'>All Projects</h1>
             </div>
-            
+
             {/* body  */}
             <div className='grid grid-cols-1 lg:grid-cols-2 my-12'>
+                <HomeProjectSix></HomeProjectSix>
                 <HomeProjectThree></HomeProjectThree>
                 <HomeProjectOne></HomeProjectOne>
                 <HomeProjectTwo></HomeProjectTwo>

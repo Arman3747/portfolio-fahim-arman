@@ -9,6 +9,7 @@ import AllProjects from '../components/AllProjects';
 import ProjectNextProduct from '../components/ProjectNextProduct';
 import ErrorPage from '../components/ErrorPage';
 import ProjectBookNest from '../components/ProjectBookNest';
+import ProjectOpenNotes from '../components/ProjectOpenNotes';
 
 const Router = createBrowserRouter([
     {
@@ -21,11 +22,6 @@ const Router = createBrowserRouter([
                 path: '/home',
                 element: <Home></Home>
             }
-            // },
-            // {
-            //     path: "/projectRoomiesdfsd",
-            //     element: <div>Hello World</div>,
-            // }
         ]
     },
     {
@@ -52,7 +48,10 @@ const Router = createBrowserRouter([
         path: "/projectBookNest",
         element: <ProjectBookNest></ProjectBookNest>
     },
-
+    {
+        path: "/projectOpenNotes",
+        element: <ProjectOpenNotes></ProjectOpenNotes>
+    },
 ]);
 
 export default Router;

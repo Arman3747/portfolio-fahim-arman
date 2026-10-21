@@ -1,14 +1,11 @@
 import React from 'react';
-// import ProjectsOne from './ProjectsOne';
-// import ProjectsTwo from './ProjectsTwo';
-// import ProjectThree from './ProjectThree';
-import HomeProjectOne from './HomeProjectOne';
-import HomeProjectTwo from './HomeProjectTwo';
-import HomeProjectThree from './HomeProjectThree';
-import HomeProjectFour from './HomeProjectFour';
-import { Link } from 'react-router';
 
+import HomeProjectOne from './HomeProjectOne';
+import HomeProjectThree from './HomeProjectThree';
+import { Link } from 'react-router';
 import { FaCode } from "react-icons/fa6";
+import HomeProjectSix from './HomeProjectSix';
+import HomeProjectFive from './HomeProjectFive';
 
 const Projects = ({ ref }) => {
     return (
@@ -18,10 +15,10 @@ const Projects = ({ ref }) => {
                 <h1 ref={ref} id="projects" className='scroll-mt-32 text-5xl text-center mb-12 font-bold'>Projects</h1>
 
                 <div className='grid grid-cols-1 lg:grid-cols-2'>
+                    <HomeProjectSix></HomeProjectSix>
                     <HomeProjectThree></HomeProjectThree>
                     <HomeProjectOne></HomeProjectOne>
-                    <HomeProjectTwo></HomeProjectTwo>
-                    <HomeProjectFour></HomeProjectFour>
+                    <HomeProjectFive></HomeProjectFive>
                 </div>
 
                 <br />
@@ -36,11 +33,6 @@ const Projects = ({ ref }) => {
                         </button>
                     </Link>
                 </div>
-
-                {/* <ProjectThree></ProjectThree>
-                <ProjectsOne></ProjectsOne>
-                <ProjectsTwo></ProjectsTwo> */}
-
             </div>
         </div>
     );

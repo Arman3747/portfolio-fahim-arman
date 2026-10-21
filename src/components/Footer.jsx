@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router';
+import { NavLink } from 'react-router';
 
 const Footer = () => {
     return (
@@ -7,7 +7,7 @@ const Footer = () => {
             <div className='flex justify-center items-center gap-4 px-16'>
                 <div className='flex flex-col lg:flex-row justify-start gap-8'>
                     <NavLink className="text-xl cursor-pointer" to="/home#hero">
-                    <span className={`hover:border-b-2 hover:border-[#00df72] ${location.hash === '#hero' ? "border-b-2 border-[#00df72]" : " "}`}>./home</span></NavLink>
+                        <span className={`hover:border-b-2 hover:border-[#00df72] ${location.hash === '#hero' ? "border-b-2 border-[#00df72]" : " "}`}>./home</span></NavLink>
 
                     <NavLink className="text-xl cursor-pointer" to="/home#about"><span className={`hover:border-b-2 hover:border-[#00df72] ${location.hash === '#about' ? "border-b-2 border-[#00df72]" : " "}`}>./about</span></NavLink>
 

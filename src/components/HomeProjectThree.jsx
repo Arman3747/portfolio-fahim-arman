@@ -9,8 +9,6 @@ import { SiReactrouter } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { AiOutlineJavaScript } from "react-icons/ai";
 import { FaNodeJs } from "react-icons/fa";
-
-
 import { FaCode } from "react-icons/fa6";
 
 const HomeProjectThree = () => {
@@ -32,12 +30,10 @@ const HomeProjectThree = () => {
                     <p className='text-xl text-justify p-2'>Blood Connect is a web platform that instantly connects blood donors and seekers through location-based search, verified profiles, and role-based dashboards, making blood donation faster, organized, and reliable for urgent needs.</p>
 
                     <div className='grid grid-cols-4 gap-4 place-items-center my-8'>
-
                         <AiOutlineJavaScript className='text-5xl text-[#FFED29] border-2 bg-[#333333] border-[#333333] p-2 rounded-md' />
                         <FaReact className='text-5xl text-[#61DAFB] border-2 border-[#333333] p-2 rounded-md' />
                         <FaNodeJs className='text-5xl text-[#5FA04E] border-2 border-[#333333] p-2 rounded-md' />
                         <SiExpress className='text-5xl text-[#000000] border-2 border-[#333333] p-2 rounded-md' />
-
                         <SiMongodb className='text-5xl text-[#47A248] border-2 border-[#333333] p-2 rounded-md' />
                         <RiTailwindCssFill className='text-5xl text-[#06B6D4] border-2 border-[#333333] p-2 rounded-md' />
                         <SiReactrouter className='text-5xl text-[#CA4245] border-2 border-[#333333] p-2 rounded-md' />
@@ -54,8 +50,6 @@ const HomeProjectThree = () => {
                     </div>
                 </div>
             </div>
-
-
         </div>
     );
 };

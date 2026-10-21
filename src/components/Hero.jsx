@@ -13,9 +13,8 @@ const Hero = ({ ref }) => {
             <div className='flex flex-col-reverse lg:flex-row justify-evenly items-center gap-4'>
                 <div className='flex-1'>
                     <h1 className='text-5xl lg:text-7xl mb-4 lg:mb-8'>Fahim Arman</h1>
-                    {/* <h3 className='text-xl lg:text-3xl mb-4'> <span className='border-b-2 border-[#00df72]'>Full Stack Developer (MERN & PERN)</span></h3> */}
-
-                    <h3 className='text-xl lg:text-3xl mb-4 flex items-end'> 
+                    
+                    <h3 className='text-xl lg:text-3xl mb-4 flex items-end'>
                         <GoCommandPalette className='text-[#00df72]' />
                         <span>&nbsp;</span>
                         <span className='font-light' >
@@ -35,8 +34,6 @@ const Hero = ({ ref }) => {
                     {/* <p className='text-xl'>Building fast, scalable, and user-friendly web applications with React, Next.js, Node.js, MongoDB, and PostgreSQL while focusing on performance, clean code, and modern UI development.</p> */}
 
                     <p className='text-xl'>Full Stack JavaScript Developer specializing in MERN Stack, PERN Stack, and Next.js, building fast, scalable, and modern web applications with clean UI and high-performance backend systems.</p>
-
-                    {/* <p className='text-xl'>Full Stack JavaScript Developer specializing in MERN Stack, PERN Stack, and Next.js, building fast, scalable, and modern web applications using React, TypeScript, Redux, Prisma, Node.js, and Express.js with clean UI and high-performance backend systems.</p> */}
 
                     <div className='flex justify-start items-center gap-4 my-6'>
 
@@ -75,7 +72,7 @@ const Hero = ({ ref }) => {
                 <div className='flex-1 '>
                     <div className='flex justify-center items-center'>
                         {/* Real picture  */}
-                        <img className='border-2 rounded-full w-md' src="https://i.ibb.co/mCW2zvSg/Fahim-Arman-new-512.jpg" alt="" />
+                        <img className='border-2 rounded-full w-md' src="https://i.ibb.co/mCW2zvSg/Fahim-Arman-new-512.jpg" alt="Fahim Arman" />
 
                         {/* avater picture  */}
                         {/* <img className='border-2 rounded-full w-md' src="https://i.ibb.co/svTnYLLv/developer-512.jpg" alt="" /> */}

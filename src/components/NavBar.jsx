@@ -36,7 +36,7 @@ const NavBar = () => {
                         Resume
                     </a>
                 </div>
-                
+
                 <div className='flex flex-col lg:hidden' onClick={() => setOpenMenu(!openMenu)}>
                     {
                         openMenu ? <RiCloseLargeFill className='text-3xl lg:hidden' /> : <HiMenu className='text-3xl lg:hidden' />

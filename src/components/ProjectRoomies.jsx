@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from 'react-router';
 import { HiMenu } from "react-icons/hi";
 import { RiCloseLargeFill } from "react-icons/ri";
-
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { PiLinkSimpleBold } from "react-icons/pi";
@@ -164,47 +163,6 @@ const ProjectRoomies = () => {
                 </div>
             </div>
 
-            {/* <div className='bg-white border-2 rounded-md'>
-                <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/Q3ymNpkh/Roomies-github.png" />
-                    </div>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/pjKWfvJq/Roomies-post-02.png" />
-                    </div>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/Rk7p7LPj/Roomies-post-03.png" />
-                    </div>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/bMyXQHzJ/Roomies-post-04.png" />
-                    </div>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/V06yJgMc/Roomies-post-05.png" />
-                    </div>
-                </Carousel>
-            </div> */}
-
-            {/* <div className='my-12'>
-                <h3 className='text-2xl lg:text-3xl font-semibold mb-8'>Key Features of Roomies</h3>
-
-
-                {features.map((feature) => (
-                    <div key={feature.roomiesId} className='flex gap-2 mb-2'>
-                        <div>
-                            <span className="text-green-500 text-3xl font-medium">✓</span>
-                        </div>
-
-                        <div className='text-lg lg:text-xl font-medium'>
-                            <span className='font-bold text-xl lg:text-2xl'>
-                                {feature.roomiesFeature}
-                            </span> -&nbsp; {feature.roomiesDescription}
-                        </div>
-                    </div>
-                ))}
-            </div> */}
-
-
-
             <div>
                 <h3 className='text-2xl lg:text-3xl font-semibold my-12'>
                     <span className='border-b-2 border-[#00df72]'>
@@ -219,20 +177,6 @@ const ProjectRoomies = () => {
                     </div>
 
                     <div className='col-span-1 lg:col-span-3 flex flex-wrap justify-start items-center gap-4'>
-
-                        {/* <div className="border-2 p-1 flex justify-center items-center gap-2 bg-[#333333] rounded-md">
-                            <FaHtml5 className='text-xl text-[#E34F26]' />
-                            <p className="text-white">HTML5</p>
-                        </div>
-
-                        <div className="border-2 p-1 flex justify-center items-center gap-2 bg-[#333333] rounded-md">
-                            <FaCss3Alt className='text-xl text-[#663399]' />
-                            <p className="text-white">CSS3</p>
-                        </div> */}
-
-
-
-
                         <img src="https://img.shields.io/badge/HTML5-333333?logo=html5" alt="" />
                         <img src="https://img.shields.io/badge/CSS3-333333?logo=css" alt="" />
                         <img src="https://img.shields.io/badge/JavaScript-333333?logo=javascript" alt="" />
@@ -249,7 +193,6 @@ const ProjectRoomies = () => {
                         <img src="https://img.shields.io/badge/Express.js-333333?logo=express" alt="" />
                         <img src="https://img.shields.io/badge/MongoDB-333333?logo=mongodb" alt="" />
                         <img src="https://img.shields.io/badge/Nodemon-333333?logo=nodemon" alt="" />
-
                     </div>
 
                     <div className='text-right text-lg lg:text-2xl col-span-1'>Authentication

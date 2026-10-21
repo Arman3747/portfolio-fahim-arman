@@ -9,8 +9,6 @@ import { SiReactrouter } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { AiOutlineJavaScript } from "react-icons/ai";
 import { FaNodeJs } from "react-icons/fa";
-
-
 import { FaCode } from "react-icons/fa6";
 
 const HomeProjectOne = () => {
@@ -55,8 +53,6 @@ const HomeProjectOne = () => {
                     </div>
                 </div>
             </div>
-
-
         </div>
     );
 };

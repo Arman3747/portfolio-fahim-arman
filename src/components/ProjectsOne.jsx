@@ -12,8 +12,6 @@ import { SiReactrouter } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { AiOutlineJavaScript } from "react-icons/ai";
 import { FaNodeJs } from "react-icons/fa";
-
-
 import { FaCode } from "react-icons/fa6";
 import { PiLinkSimpleBold } from "react-icons/pi";
 
@@ -49,52 +47,15 @@ const ProjectsOne = () => {
                     </h1>
                     <p className='text-xl text-justify'>A web app where businesses (users) can post their products for sale, browse by category, and make purchases — essentially bridging the gap between sellers and buyers in the business world.</p>
 
-                    {/* <div className='flex gap-2 mb-2'>
-                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
-                        <div className='text-xl font-medium'>Seamless Product Posting and Management</div>
-                    </div>
-
-                    <div className='flex gap-2 mb-2'>
-                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
-                        <div className='text-xl font-medium'>Category-Based Browsing with Detailed Product View</div>
-                    </div>
-
-                    <div className='flex gap-2 mb-2'>
-                        <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
-                        <div className='text-xl font-medium'>Secure Authentication with Google and JWT</div>
-                    </div> */}
-
                     <div className='grid grid-cols-8 place-items-center gap-2 my-8'>
-
                         <AiOutlineJavaScript className='text-5xl text-[#FFED29] border-2 bg-[#333333] border-[#333333] p-2 rounded-md' />
                         <FaReact className='text-5xl text-[#61DAFB] border-2 border-[#333333] p-2 rounded-md' />
                         <FaNodeJs className='text-5xl text-[#5FA04E] border-2 border-[#333333] p-2 rounded-md' />
                         <SiExpress className='text-5xl text-[#000000] border-2 border-[#333333] p-2 rounded-md' />
-
                         <SiMongodb className='text-5xl text-[#47A248] border-2 border-[#333333] p-2 rounded-md' />
                         <RiTailwindCssFill className='text-5xl text-[#06B6D4] border-2 border-[#333333] p-2 rounded-md' />
                         <SiReactrouter className='text-5xl text-[#CA4245] border-2 border-[#333333] p-2 rounded-md' />
                         <IoLogoFirebase className='text-5xl text-[#DD2C00] border-2 border-[#333333] p-2 rounded-md' />
-
-
-
-                        {/* <img src="https://img.shields.io/badge/React-333333?logo=react" alt="" />
-
-                            <img src="https://img.shields.io/badge/JavaScript-333333?logo=javascript" alt="" />
-
-                            <img src="https://img.shields.io/badge/Node.js-333333?logo=nodedotjs" alt="" />
-
-                            <img src="https://img.shields.io/badge/Express.js-333333?logo=express" alt="" />
-
-                            <img src="https://img.shields.io/badge/MongoDB-333333?logo=mongodb" alt="" />
-
-                            <img src="https://img.shields.io/badge/Tailwind_CSS-333333?logo=tailwindcss" alt="" />
-
-                            <img src="https://img.shields.io/badge/Daisy_UI-333333?logo=daisyui" alt="" />
-
-                            <img src="https://img.shields.io/badge/React_Router-333333?logo=reactrouter" alt="" /> */}
-
-
                     </div>
 
                     <div className='grid grid-cols-2 gap-2'>
@@ -105,18 +66,6 @@ const ProjectsOne = () => {
                                 Live Link
                             </button>
                         </a>
-
-                        {/* <a href="https://github.com/Arman3747/B2Bridge-client" target='_blank' rel="noopener noreferrer">
-                                <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer'>
-                                    Github Client
-                                </button>
-                            </a>
-
-                            <a href="https://github.com/Arman3747/B2Bridge-server" target='_blank' rel="noopener noreferrer">
-                                <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer'>
-                                    Github Server
-                                </button>
-                            </a> */}
 
                         <Link to="/projectBridge">
                             <button className='bg-[#00df72] px-2 py-2 text-xl rounded-md h-full w-full cursor-pointer flex justify-center items-center gap-2'>

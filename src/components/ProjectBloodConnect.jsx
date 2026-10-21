@@ -55,7 +55,7 @@ const ProjectBloodConnect = () => {
                             <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/home">/home</NavLink>
 
                             <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72]" to="/allProjects">/allProjects</NavLink>
-                            
+
                             <NavLink className="text-xl cursor-pointer hover:border-b-2 hover:border-[#00df72] border-b-2 border-[#00df72]" to="/projectBloodConnect">./BloodConnect</NavLink>
                         </div>
                     </div>
@@ -118,8 +118,6 @@ const ProjectBloodConnect = () => {
                             Key Features of BloodConnect
                         </span>
                     </h1>
-
-                    {/* <p className='text-xl text-justify'>Blood Connect is a web platform that instantly connects blood donors and seekers through location-based search, verified profiles, and role-based dashboards, making blood donation faster, organized, and reliable for urgent needs.</p> */}
 
                     <div className='flex gap-2 mb-2'>
                         <div><span className="text-green-500 text-3xl font-medium">✓</span></div>
@@ -203,44 +201,6 @@ const ProjectBloodConnect = () => {
                 </div>
             </div>
 
-            {/* <div className='bg-white border-2 rounded-md'>
-                <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/7dhbSrZt/Blood-Connect-github.png" />
-                    </div>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/BHpsjCTq/Blood-Connect-post-02.png" />
-                    </div>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/bMGmNjCK/Blood-Connect-post-03.png" />
-                    </div>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/JRLMzpWK/Blood-Connect-post-04.png" />
-                    </div>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/hJGV8rnp/Blood-Connect-post-05.png" />
-                    </div>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/VWTyBTBw/Blood-Connect-post-06.png" />
-                    </div>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/6Rs9xYNb/Blood-Connect-post-07.png" />
-                    </div>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/JRfd2Z0S/Blood-Connect-post-08.png" />
-                    </div>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/WWB9WysS/Blood-Connect-post-09.png" />
-                    </div>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/bgP1rKLC/Blood-Connect-post-10.png" />
-                    </div>
-                    <div>
-                        <img className='h-60 lg:h-150 w-auto object-contain' src="https://i.ibb.co/wZynrKFz/Blood-Connect-post-11.png" />
-                    </div>
-                </Carousel>
-            </div> */}
-
             <div>
                 <h3 className='text-2xl lg:text-3xl font-semibold my-12'>
                     <span className='border-b-2 border-[#00df72]'>
@@ -255,7 +215,6 @@ const ProjectBloodConnect = () => {
                     </div>
 
                     <div className='col-span-1 lg:col-span-3 flex flex-wrap justify-start items-center gap-4'>
-
                         <img src="https://img.shields.io/badge/HTML5-333333?logo=html5" alt="" />
                         <img src="https://img.shields.io/badge/CSS3-333333?logo=css" alt="" />
                         <img src="https://img.shields.io/badge/JavaScript-333333?logo=javascript" alt="" />
@@ -266,7 +225,6 @@ const ProjectBloodConnect = () => {
                         <img src="https://img.shields.io/badge/Axios-333333?logo=axios" alt="" />
                         <img src="https://img.shields.io/badge/React_Hook_Form-333333?logo=reacthookform" alt="" />
                         <img src="https://img.shields.io/badge/TanStack_Query-333333?logo=reactquery" alt="" />
-                        
                     </div>
 
                     <div className='text-right text-lg lg:text-2xl col-span-1'>Backend</div>
@@ -276,7 +234,6 @@ const ProjectBloodConnect = () => {
                         <img src="https://img.shields.io/badge/MongoDB-333333?logo=mongodb" alt="" />
                         <img src="https://img.shields.io/badge/Nodemon-333333?logo=nodemon" alt="" />
                         <img src="https://img.shields.io/badge/Stripe-333333?logo=stripe" alt="" />
-
                     </div>
 
                     <div className='text-right text-lg lg:text-2xl col-span-1'>Authentication

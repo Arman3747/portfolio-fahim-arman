@@ -5,16 +5,10 @@ import { FaReact } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiReactrouter } from "react-icons/si";
-import { IoLogoFirebase } from "react-icons/io5";
-import { AiOutlineJavaScript } from "react-icons/ai";
-import { FaNodeJs } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { SiMongoose } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 import { SiShadcnui } from "react-icons/si";
-import { SiVercel } from "react-icons/si";
-
 import { FaCode } from "react-icons/fa6";
 
 const HomeProjectFive = () => {
@@ -37,15 +31,15 @@ const HomeProjectFive = () => {
                     <p className='text-xl text-justify p-2'>A simple library management system to add, edit, delete, and borrow books, track availability, and view a borrow summary—built with React, TypeScript, and RTK Query for clean, real-time updates.</p>
 
                     <div className='grid grid-cols-4 gap-4 place-items-center my-8'>
-                        
+
                         <SiTypescript className='text-5xl text-[#3178C6] border-0 bg-[#333333] border-[#333333] p-2 rounded-md' />
 
                         <FaReact className='text-5xl text-[#61DAFB] border-2 border-[#333333] p-2 rounded-md' />
 
                         <SiRedux className='text-5xl text-[#764ABC] border-2 border-[#333333] p-2 rounded-md' />
 
-                         <SiExpress className='text-5xl text-[#000000] border-2 border-[#333333] p-2 rounded-md' />
-                        
+                        <SiExpress className='text-5xl text-[#000000] border-2 border-[#333333] p-2 rounded-md' />
+
                         <SiMongodb className='text-5xl text-[#47A248] border-2 border-[#333333] p-2 rounded-md' />
 
                         <SiMongoose className='text-5xl text-[#880000] border-2 border-[#333333] p-2 rounded-md' />
@@ -66,8 +60,6 @@ const HomeProjectFive = () => {
                     </div>
                 </div>
             </div>
-
-
         </div>
     );
 };
